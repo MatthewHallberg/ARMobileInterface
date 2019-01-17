@@ -1,0 +1,15 @@
+﻿<Properties StartupConfiguration="{A60C3D7D-FEE0-EF5E-5717-89F53CFA27C3}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/InterfaceController.cs">
+    <Files>
+      <File FileName="Assets/Scripts/InterfaceController.cs" Line="10" Column="6" />
+      <File FileName="Assets/Scripts/MessageController.cs" Line="12" Column="5" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
