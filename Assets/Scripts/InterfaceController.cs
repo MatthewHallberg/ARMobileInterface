@@ -3,14 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class InterfaceController : MonoBehaviour {
-    public static InterfaceController Instance { get; private set; }
 
-    void Awake() {
-        Instance = this;
+    public void GenericButtonDown(string name) {
+        SendMessages.Instance.SendPacket(name);
     }
 
-    // Update is called once per frame
-    void Update() {
-
+    public void SliderValueChanged(float val) {
+        SendMessages.Instance.SendPacket(val.ToString());
     }
 }
