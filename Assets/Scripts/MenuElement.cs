@@ -1,8 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class MenuElement : MonoBehaviour {
+
+    public UnityEvent StartEvent;
+    public UnityEvent EndEvent;
 
     Vector3 startSize = Vector3.zero;
     Vector3 desiredScale = Vector3.zero;
@@ -16,6 +20,7 @@ public class MenuElement : MonoBehaviour {
         desiredPosition = startPosition;
         desiredPosition.y = 0;
         startSize = transform.localScale;
+        EndEvent.Invoke();
     }
 
     // Update is called once per frame
@@ -29,10 +34,12 @@ public class MenuElement : MonoBehaviour {
             desiredScale = Vector3.zero;
             desiredPosition.y = 0;
             moveSpeed = 11f;
+            EndEvent.Invoke();
         } else {
             desiredScale = startSize;
             desiredPosition = startPosition;
             moveSpeed = 7f;
+            StartEvent.Invoke();
         }
     }
 }

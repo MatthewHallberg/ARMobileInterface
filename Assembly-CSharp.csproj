@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\RecieveMessages.cs" />
     <Compile Include="Assets\Scripts\SendMessages.cs" />
     <Compile Include="Assets\Scripts\VuforiaSettings.cs" />
+    <Compile Include="Assets\Scripts\YouTubeAPI.cs" />
     <None Include="Assets\Vuforia\Shaders\ColoredLines.shader" />
     <None Include="Assets\Vuforia\Shaders\CameraDiffuse.shader" />
     <None Include="Assets\Vuforia\Shaders\VertexLitWithZ.shader" />

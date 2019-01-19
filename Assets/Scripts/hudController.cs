@@ -5,6 +5,7 @@ using UnityEngine;
 public class hudController : MonoBehaviour {
 
     public MenuElement web;
+    public MenuElement music;
 
     private void OnEnable() {
         RecieveMessages.messageRecieved += MessageRecieved;
@@ -15,9 +16,13 @@ public class hudController : MonoBehaviour {
     }
 
     public void MessageRecieved(string message) {
+        Debug.Log("Got Message: " + message);
         switch (message) {
         case "web":
             web.ButtonPressed();
+            break;
+        case "music":
+            music.ButtonPressed();
             break;
         default:
             Debug.Log(message + " not recognized");
