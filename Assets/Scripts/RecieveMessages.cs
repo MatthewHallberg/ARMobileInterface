@@ -8,12 +8,19 @@ public class RecieveMessages : MonoBehaviour {
 
     public delegate void OnMessageRecieved(string result);
     public static OnMessageRecieved messageRecieved;
-    
+
+    UdpClient receiver;
+
     void Start() {
         // Create UDP client
         int receiverPort = 1998;
-        UdpClient receiver = new UdpClient(receiverPort);
+        receiver = new UdpClient(receiverPort);
         receiver.BeginReceive(DataReceived, receiver);
+    }
+
+    private void OnApplicationQuit() {
+        receiver.Close();
+        receiver.Dispose();
     }
 
     // This is called whenever data is received

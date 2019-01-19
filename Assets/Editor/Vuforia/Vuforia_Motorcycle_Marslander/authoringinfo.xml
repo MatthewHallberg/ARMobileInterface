@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARInfo>
+<TargetSet version="14.0" toolVersion="7.0.0">
+<ModelTarget name="Vuforia_MarsLander" targetId="1b4ab4cb460b4d5da9cb19b15b28a476" version="11.0" toolVersion="3.0.0" bbox="-0.076974 0.000075 -0.054268 0.073280 0.110221 0.076523" previewImage="1b4ab4cb460b4d5da9cb19b15b28a476_preview.jpg"/>
+<ModelTarget name="Vuforia_Motorcycle" targetId="42f244431a4a4907ac7dcac2b5695111" version="11.0" toolVersion="3.0.0" bbox="-0.034197 -0.096193 -0.035657 0.034182 0.074178 0.064130" previewImage="42f244431a4a4907ac7dcac2b5695111_preview.jpg"/>
+
+</TargetSet>
+
+<Assembly name="Vuforia_MarsLanders_assembly" assemblyId="d47e9b97bf9b4ecd8afe939754eec55f">
+<Part name="Vuforia_MarsLander" translation="0 0 0" rotation="AD: 0 0 1 0"/>
+<EntryPoint name="Rear" translation="-0.00177257 0.0421105 0.398642" rotation="AD: 0.9999999999958235 0.0008974393462479102 -0.003335080355951093 210.122" image="Vuforia_MarsLander_Rear.png">
+
+</EntryPoint>
+<EntryPoint name="Front" translation="0.00185205 0.0558209 0.368342" rotation="AD: -0.0014528501790268343 -1.013269946109451 6.199011200595934 179.996" image="Vuforia_MarsLander_Front.png">
+
+</EntryPoint>
+
+</Assembly>
+<Assembly name="Vuforia_Motorcycles_assembly" assemblyId="a8fcf67dd72e45cca6969cb48951aa1b">
+<Part name="Vuforia_Motorcycle" translation="0 0 0" rotation="AD: 0 0 1 0"/>
+<EntryPoint name="Left" translation="0.0110066 0.0119589 0.308188" rotation="AD: 0.9462439506356998 0.9588194605371584 -0.5160922999449562 141.108" image="Vuforia_Motorcycle_Left.png">
+
+</EntryPoint>
+<EntryPoint name="Right" translation="-0.0110073 0.0130032 0.306969" rotation="AD: 0.933937644820812 -0.9282921551871186 0.6052958481101901 134.416" image="Vuforia_Motorcycle_Right.png">
+
+</EntryPoint>
+
+</Assembly>
+<ModelTargetDatabase mtDBid="be52e8fcf784417eb1fcd58d684d2fe4" name="Vuforia_Motorcycle_Marslander" toolVersion="13.0" version="13.0">
+    <RecognitionResult assemblyId="d47e9b97bf9b4ecd8afe939754eec55f" assemblyName="Vuforia_MarsLander" entryPoint="Rear" />
+    <RecognitionResult assemblyId="d47e9b97bf9b4ecd8afe939754eec55f" assemblyName="Vuforia_MarsLander" entryPoint="Front" />
+    <RecognitionResult assemblyId="a8fcf67dd72e45cca6969cb48951aa1b" assemblyName="Vuforia_Motorcycle" entryPoint="Left" />
+    <RecognitionResult assemblyId="a8fcf67dd72e45cca6969cb48951aa1b" assemblyName="Vuforia_Motorcycle" entryPoint="Right" />
+</ModelTargetDatabase>
+
+</QCARInfo>

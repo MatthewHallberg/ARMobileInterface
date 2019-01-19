@@ -9,12 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -2067402452, guid: bab6fa851cf5a1a4bba3cec5f191cb8e, type: 3}
+  m_Script: {fileID: -2067402452, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: VuforiaConfiguration
   m_EditorClassIdentifier: 
   vuforia:
     vuforiaLicenseKey: AcXqS6r/////AAABGa4Aj+ZYlklVqUgr5kRmASEOt4QQaBamuthPJP1mptbc0hx2ylHPa0Mw7vqqfgb1wOeFW5tP0vxJdadyDR79NrhmPie31vknp5dvE+F2p9soL3wr8gWjGtgrijQXVjEbLtiSBBHLyS35k660Rt6arH4Ktzl+qDaznOa/zyvDr5gO7gNyXF7UzMgr10YEbGVaNErj8X6vMuq0XmK37rSlfTHO1mVbpD0sNAiIIRPWFk55qTUqUHoMSpioOMDDrIG9Rn7kB5xyEymt2NMu6ID9pP24N4sks425bBYudUE4Sgd9nA3CBHPlaGdZrNSWs0k1Sv41Oq1WyagmbA7lYOxG5M2hh2fZIy6fe/VicBdQhqBh
-    ufoLicenseKey: QVk3dmxtVC8vLy8vQUFBQUtDUGhTRElUUjAyTHE4UnBzMHdNWWNVNFU0VlhqcFloMDN4ZG1adkp2NnYzdFB0Sjc1a210bWQ1Q0hUWGhTaVM5MjZFR3lRdFZKUnBMbVFjMzZZTDZzZmJVY3VFRkpRVXp1RFh2YW9VMDRQWGR2YkN4SmdLeVVQQUJBbmErRjFOaDFwT0p6L0NyS2gyNWpaMFRtWHFmOFdkNVllVXEySkttMWJqRjNVTE44L3RoeUtmWmxYVzNSczhmRWFIMVZEQ1NkRTN6Tjc0aEkxTlo4TjhFTUpoZmlGWHlVZnFVT2QwWWVpd1Q4b3ZPL0lFS0NCNzAzM0RZV3VFTTJYSHVTY2Qwb3BEbnBuQThHT1JHNzhMaUZzVnRiL1VROGZJbmxaQWdDQ1NqRFZ1RCt4czFRNDlMR29SdUc5UHNXQStqVzZEaWlUaTh0Qlp5UXBaTzFEVDZGN1ZoUzd1Y0dPQkNXVG82OWtsNG9lR0w2Y2Q=
+    ufoLicenseKey: QVhCSDJ2TC8vLy8vQUFBQUtIT3FPREk4WkV4UG52ZGdJODEvZVR1WTNZZGFTb2xJTlBqZ01IR0hzSGgvU0o1cVVnS3FYaWg5aFBVMEFhVmNRVXhZOE5KRUtOdHlxbWpqVUtJZG5zdkRLeVNyQ2E0UHdiL2lybGZ0QjQzTWtnQkxaMnFOWjNmaEhGWjBiT1RVazVreTRGQkwyM0R2OUlzbDJPakp5T2F1d1diS2RmK05FSzFhSitIc3VVVUU4SDYybHJla2ZWTE5aaXVUS3NTSTJ1TVljRE1LbVliejV5T2JmQ1ZuenhLenA0NWFHUUxiZXBFSENYb0RMenlRZ05GQUxEemU5M1FBSElOUGpNWEdXT002UUNmakZzQXQvOEZvZUU0cnB1UjF0c2ZlUEdZRDZYa2JKWExaUkRGMnNOeDIxSXQ3OUhuemhxY0w2cEkwaDIvU2RuMHJVVW5hdzR5TnB6ZFdWQXByVkFnbUZRN0pVa1FPNGV1dkJpS3E=
     delayedInitialization: 0
     cameraDeviceModeSetting: -1
     maxSimultaneousImageTargets: 1
@@ -23,15 +23,15 @@ MonoBehaviour:
     cameraDirection: 0
     mirrorVideoBackground: 0
     version: 8.0.10
-    eulaAcceptedVersions: '{"Values":["7.2","7.5","7.1","8.0"]}'
+    eulaAcceptedVersions: '{"Values":["7.2","7.5","7.1","8.0","7.7","8.1","0.0"]}'
   digitalEyewear:
-    cameraOffset: 0.06
+    cameraOffset: 0
     distortionRenderingLayer: 31
-    eyewearType: 0
+    eyewearType: 2
     stereoFramework: 0
     seeThroughConfiguration: 0
-    viewerName: 
-    viewerManufacturer: 
+    viewerName: Cardboard v1
+    viewerManufacturer: Google
     useCustomViewer: 0
     customViewer:
       Version: 0
@@ -50,21 +50,21 @@ MonoBehaviour:
     numDivisions: 2
     videoBackgroundShader: {fileID: 4800000, guid: f40623b353e2f1943b1b3ba42975db7a,
       type: 3}
-    matteShader: {fileID: 4800000, guid: 66d0d78a3000021448b598bb54a3bfdf, type: 3}
+    matteShader: {fileID: 15310, guid: 0000000000000000f000000000000000, type: 0}
     videoBackgroundEnabled: 1
   deviceTracker:
     autoInitTracker: 0
     autoStartTracker: 0
-    trackingMode: 1
+    trackingMode: 0
     posePrediction: 0
-    modelCorrectionMode: 0
+    modelCorrectionMode: 2
     modelTransformEnabled: 0
     modelTransform: {x: 0, y: 0.1, z: -0.1}
   smartTerrain:
     autoInitTracker: 0
     autoStartTracker: 0
   webcam:
-    deviceNameSetInEditor: 
+    deviceNameSetInEditor: Logitech Camera
     flipHorizontally: 0
     turnOffWebCam: 0
     renderTextureLayer: 30

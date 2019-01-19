@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARInfo>
+<TargetSet version="13.0" toolVersion="7.0.0">
+<ModelTarget name="VuforiaMars_ModelTarget" targetId="ba82ad3466bb40c49bc4f0c11e2a8b23" version="10.0" toolVersion="2.0.0" bbox="-0.076974 0.000075 -0.054268 0.073280 0.110221 0.076523" previewImage="ba82ad3466bb40c49bc4f0c11e2a8b23_preview.jpg"/>
+
+</TargetSet>
+
+<Assembly name="VuforiaMars_ModelTargets_assembly" assemblyId="c6f46a11ef7e4f4bb473a1262721cf8e">
+<Part name="VuforiaMars_ModelTarget" translation="0 0 0" rotation="AD: 0 0 1 0"/>
+<EntryPoint name="Front" translation="0.00181726 0.0548691 0.355023" rotation="AD: 0.006341771445525425 -1.0226681998402973 4.773902251453074 180.032" image="Front.png">
+
+</EntryPoint>
+<EntryPoint name="Rear" translation="-0.00184344 0.0460248 0.374944" rotation="AD: 1 0.00003196492371778675 -0.0001523506621260158 203.699" image="Rear.png">
+
+</EntryPoint>
+
+</Assembly>
+
+</QCARInfo>

@@ -1,8 +1,7 @@
 ﻿<Properties StartupConfiguration="{B32FE478-68C1-0622-E83B-08F04D1845B5}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/hudController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/RecieveMessages.cs">
     <Files>
-      <File FileName="Assets/Scripts/hudController.cs" Line="21" Column="19" />
-      <File FileName="Assets/Scripts/MenuElement.cs" Line="24" Column="38" />
+      <File FileName="Assets/Scripts/RecieveMessages.cs" Line="21" Column="39" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

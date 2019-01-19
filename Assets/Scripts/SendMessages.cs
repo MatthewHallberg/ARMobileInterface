@@ -25,7 +25,7 @@ public class SendMessages : MonoBehaviour {
         InitSocket();
     }
 
-    void OnDisable() {
+    void OnApplicationQuit() {
         CloseSocket();
     }
 
