@@ -7,6 +7,9 @@ public class hudController : MonoBehaviour {
     public MenuElement web;
     public MenuElement music;
     public MenuElement weather;
+    public MenuElement earth;
+
+    public EarthBehavior earthBehavior;
 
     void OnEnable() {
         RecieveMessages.messageRecieved += MessageRecieved;
@@ -20,27 +23,37 @@ public class hudController : MonoBehaviour {
         foreach (MenuElement element in FindObjectsOfType<MenuElement>()) {
             if (element.name != currName) {
                 element.Close();
-                print(element.name);
             }
         }
     }
 
     public void MessageRecieved(string message) {
-        Debug.Log("Got Message: " + message);
-        DisableOtherWindows(message);
-        switch (message) {
-        case "web":
-            web.ToggleState();
-            break;
-        case "music":
-            music.ToggleState();
-            break;
-        case "weather":
-            weather.ToggleState();
-            break;
-        default:
-            Debug.Log(message + " not recognized");
-            break;
+        //first check if message is slider value
+        if (int.TryParse(message, out int value)) {
+            earthBehavior.SetAngle(value);
+        } else {
+            DisableOtherWindows(message);
+            switch (message) {
+            case "web":
+                web.ToggleState();
+                break;
+            case "music":
+                music.ToggleState();
+                break;
+            case "weather":
+                weather.ToggleState();
+                break;
+            case "earth":
+                earth.ToggleState();
+                break;
+            case "arrow":
+
+
+                break;
+            default:
+                Debug.Log(message + " not recognized");
+                break;
+            }
         }
     }
 }

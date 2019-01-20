@@ -6,17 +6,17 @@ using System.Collections;
 
 public class RecieveMessages : MonoBehaviour {
 
+    const int PORT_NUM = 1998;
+
     public delegate void OnMessageRecieved(string result);
     public static OnMessageRecieved messageRecieved;
 
     UdpClient receiver;
-
     string currMessage = String.Empty;
 
     void Start() {
         // Create UDP client
-        int receiverPort = 1998;
-        receiver = new UdpClient(receiverPort);
+        receiver = new UdpClient(PORT_NUM);
         receiver.BeginReceive(DataReceived, receiver);
     }
 

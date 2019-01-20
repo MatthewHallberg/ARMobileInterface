@@ -7,7 +7,6 @@ using System.Text;
 
 public class SendMessages : MonoBehaviour {
 
-    const string IP = "255.255.255.255";
     const int PORT_NUM = 1998;
 
     public static SendMessages Instance { get; private set; }
@@ -25,8 +24,7 @@ public class SendMessages : MonoBehaviour {
         //init socket
         sock = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
         sock.EnableBroadcast = true;
-        serverAddr = IPAddress.Parse(IP);
-        print(serverAddr);
+        serverAddr = IPAddress.Parse("255.255.255.255");
         endPoint = new IPEndPoint(serverAddr, PORT_NUM);
     }
 
@@ -39,9 +37,9 @@ public class SendMessages : MonoBehaviour {
         try {
             send_buffer = Encoding.ASCII.GetBytes(message);
             sock.SendTo(send_buffer, endPoint);
+            Debug.Log(message);
         } catch (SocketException s) {
             Debug.Log(s);
         }
-        Debug.Log(message);
     }
 }
