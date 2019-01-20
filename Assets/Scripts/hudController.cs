@@ -8,6 +8,7 @@ public class hudController : MonoBehaviour {
     public MenuElement music;
     public MenuElement weather;
     public MenuElement earth;
+    public ScreenShare screenShare;
 
     public EarthBehavior earthBehavior;
 
@@ -32,7 +33,14 @@ public class hudController : MonoBehaviour {
         if (int.TryParse(message, out int value)) {
             earthBehavior.SetAngle(value);
         } else {
+
+            if (message == "arrow") {
+                screenShare.ShareButtonPressed();
+                return;
+            }
+
             DisableOtherWindows(message);
+
             switch (message) {
             case "web":
                 web.ToggleState();
@@ -45,10 +53,6 @@ public class hudController : MonoBehaviour {
                 break;
             case "earth":
                 earth.ToggleState();
-                break;
-            case "arrow":
-
-
                 break;
             default:
                 Debug.Log(message + " not recognized");
