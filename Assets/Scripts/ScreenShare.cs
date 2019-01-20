@@ -18,7 +18,7 @@ public class ScreenShare : MonoBehaviour {
                     if (element.isOpen && element.name != "earth") {
                         print("share Screen");
                         //move object
-                        desiredPosition = hit.point;
+                        desiredPosition = hit.transform.position;
                         desiredTransform = element.transform;
                         element.MoveToScreen();
                         DisplayBehavior display = hit.collider.GetComponent<DisplayBehavior>();
