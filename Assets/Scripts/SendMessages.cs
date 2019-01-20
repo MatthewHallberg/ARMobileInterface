@@ -22,16 +22,6 @@ public class SendMessages : MonoBehaviour {
     }
 
     void Start() {
-        InitSocket();
-    }
-
-    void OnApplicationQuit() {
-        CloseSocket();
-    }
-
-    void InitSocket() {
-        //close socket in case its already open
-        CloseSocket();
         //init socket
         sock = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
         sock.EnableBroadcast = true;
@@ -40,11 +30,9 @@ public class SendMessages : MonoBehaviour {
         endPoint = new IPEndPoint(serverAddr, PORT_NUM);
     }
 
-    void CloseSocket() {
-        if (sock != null) {
-            StopAllCoroutines();
-            sock.Disconnect(true);
-        }
+    void OnApplicationQuit() {
+        sock.Dispose();
+        sock.Close();
     }
 
     public void SendPacket(string message) {

@@ -11,11 +11,21 @@ public class RecieveMessages : MonoBehaviour {
 
     UdpClient receiver;
 
+    string currMessage = String.Empty;
+
     void Start() {
         // Create UDP client
         int receiverPort = 1998;
         receiver = new UdpClient(receiverPort);
         receiver.BeginReceive(DataReceived, receiver);
+    }
+
+    void Update() {
+        if (currMessage.Length > 0) {
+            Debug.Log("Message recieved: " + currMessage);
+            messageRecieved?.Invoke(currMessage);
+            currMessage = string.Empty;
+        }
     }
 
     private void OnApplicationQuit() {
@@ -31,9 +41,7 @@ public class RecieveMessages : MonoBehaviour {
         Byte[] receivedBytes = c.EndReceive(ar, ref receivedIpEndPoint);
 
         //string packet = System.Text.Encoding.UTF8.GetString (receivedBytes, 0, 20);
-        string currPacket = System.Text.Encoding.UTF8.GetString(receivedBytes);
-
-        messageRecieved?.Invoke(currPacket);
+        currMessage = System.Text.Encoding.UTF8.GetString(receivedBytes);
 
         // Restart listening for udp data packages
         c.BeginReceive(DataReceived, ar.AsyncState);

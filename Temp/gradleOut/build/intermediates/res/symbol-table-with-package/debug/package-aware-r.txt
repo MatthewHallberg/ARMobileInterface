@@ -1,0 +1,9 @@
+com.vuforia.engine.VRUnity
+mipmap app_icon
+mipmap app_icon_round
+mipmap ic_launcher_background
+mipmap ic_launcher_foreground
+string app_name
+style BaseUnityTheme
+style UnityThemeSelector
+style UnityThemeSelector_Translucent

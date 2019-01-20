@@ -29,17 +29,25 @@ public class MenuElement : MonoBehaviour {
         transform.localPosition = Vector3.Lerp(transform.localPosition, desiredPosition, Time.deltaTime * moveSpeed);
     }
 
-    public void ButtonPressed() {
+    public void Close() {
+        desiredScale = Vector3.zero;
+        desiredPosition.y = 0;
+        moveSpeed = 11f;
+        EndEvent.Invoke();
+    }
+
+    public void Open() {
+        desiredScale = startSize;
+        desiredPosition = startPosition;
+        moveSpeed = 7f;
+        StartEvent.Invoke();
+    }
+
+    public void ToggleState() {
         if (desiredScale == startSize) {
-            desiredScale = Vector3.zero;
-            desiredPosition.y = 0;
-            moveSpeed = 11f;
-            EndEvent.Invoke();
+            Close();
         } else {
-            desiredScale = startSize;
-            desiredPosition = startPosition;
-            moveSpeed = 7f;
-            StartEvent.Invoke();
+            Open();
         }
     }
 }
