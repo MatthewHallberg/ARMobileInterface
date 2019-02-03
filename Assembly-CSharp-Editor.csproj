@@ -60,8 +60,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Common\Editor\ConfigurePlayerSettings.cs" />
-    <Compile Include="Assets\Common\Editor\OptionsConfigEditor.cs" />
+    <Compile Include="Assets\JSONObject\Editor\JSONChecker.cs" />
     <None Include="Assets\Editor\Vuforia\VuforiaMars_VuMark\authoringinfo.xml" />
     <None Include="Assets\Editor\Vuforia\Emulator\VuforiaEmulator.xml" />
     <None Include="Assets\Editor\Vuforia\TargetsetData\VuforiaMars_Object_info.xml" />
@@ -718,10 +717,6 @@
     <ProjectReference Include="VuforiaEditorScripts.csproj">
       <Project>{647770CD-E4F7-C052-7FDE-312B6867A948}</Project>
       <Name>VuforiaEditorScripts</Name>
-    </ProjectReference>
-    <ProjectReference Include="VuforiaVersionCheckerScripts.csproj">
-      <Project>{BF05A724-237E-E08C-0BF2-116E4EE92A69}</Project>
-      <Name>VuforiaVersionCheckerScripts</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

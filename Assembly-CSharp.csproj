@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\hudController.cs" />
     <Compile Include="Assets\Scripts\InterfaceController.cs" />
     <Compile Include="Assets\Scripts\MenuElement.cs" />
+    <Compile Include="Assets\Scripts\NetworkListener.cs" />
     <Compile Include="Assets\Scripts\RecieveMessages.cs" />
     <Compile Include="Assets\Scripts\ScreenShare.cs" />
     <Compile Include="Assets\Scripts\SendMessages.cs" />
