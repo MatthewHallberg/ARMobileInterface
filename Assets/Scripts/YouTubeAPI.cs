@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.Video;
 using System.Linq;
+using System;
 
 [System.Serializable]
 public class VideoInfo {
@@ -20,7 +21,7 @@ public class VideoInfoCollection {
 [RequireComponent(typeof(VideoPlayer))]
 public class YouTubeAPI : MonoBehaviour {
 
-    const string API_ENDPOINT = "https://you-link.herokuapp.com/?url=";
+    const string API_ENDPOINT = "http://matthewhallberg.com/jarvis/youtubelink.php/?url=";
 
     public string YouTubeURL;
 
@@ -29,10 +30,9 @@ public class YouTubeAPI : MonoBehaviour {
     // Start is called before the first frame update
     void Start() {
         videoPlayer = GetComponent<VideoPlayer>();
-        GetLink(YouTubeURL);
     }
 
-    public void GetLink(string url) {
+    public void LoadVideo(string url) {
         StartCoroutine(GetYouTubeLinkRoutine(url));
     }
 
@@ -45,8 +45,13 @@ public class YouTubeAPI : MonoBehaviour {
         //find video link with desired quality
         VideoInfo videoInfo = videoArray.Where(
         item => item.quality == "medium" && item.type.Contains("mp4")).FirstOrDefault();
-        videoPlayer.url = videoInfo.url;
-        videoPlayer.Prepare();
-        Debug.Log("Video Loaded");
+        try {
+            videoPlayer.url = videoInfo.url;
+            videoPlayer.Prepare();
+            Debug.Log("Video Loaded");
+            videoPlayer.Play();
+        } catch (NullReferenceException e) {
+            Debug.Log("video link cannot be found!");
+        }
     }
 }

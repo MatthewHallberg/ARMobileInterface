@@ -8,7 +8,10 @@ public class NetworkListener : MonoBehaviour {
     const string SERVER_ADDRESS = "http://matthewhallberg.com";
     const string PORT_NUM = "3000";
 
-    string address = SERVER_ADDRESS + ':' + PORT_NUM;
+    readonly string address = SERVER_ADDRESS + ':' + PORT_NUM;
+
+    public delegate void OnResultRecieved(string result);
+    public static OnResultRecieved resultRecieved;
 
     // Start is called before the first frame update
     void Start() {
@@ -26,21 +29,10 @@ public class NetworkListener : MonoBehaviour {
             } else {
                 string message = www.downloadHandler.text;
                 if (message.Length > 0) {
-                    Debug.Log(message);
-                    StartCoroutine(MessageRecieved());
+                    resultRecieved?.Invoke(message);
                 }
             }
            yield return new WaitForSeconds(.5f);
-        }
-    }
-
-    //when new data is found send response back to clear
-    IEnumerator MessageRecieved() {
-        UnityWebRequest www = UnityWebRequest.Post(address, "clear");
-        www.SetRequestHeader("head", "unity");
-        yield return www.SendWebRequest();
-        if (www.isNetworkError || www.isHttpError) {
-            Debug.Log(www.error);
         }
     }
 }

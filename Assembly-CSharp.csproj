@@ -65,11 +65,12 @@
     <Compile Include="Assets\Scripts\hudController.cs" />
     <Compile Include="Assets\Scripts\InterfaceController.cs" />
     <Compile Include="Assets\Scripts\MenuElement.cs" />
+    <Compile Include="Assets\Scripts\MessageHandler.cs" />
     <Compile Include="Assets\Scripts\NetworkListener.cs" />
     <Compile Include="Assets\Scripts\RecieveMessages.cs" />
-    <Compile Include="Assets\Scripts\ScreenShare.cs" />
     <Compile Include="Assets\Scripts\SendMessages.cs" />
     <Compile Include="Assets\Scripts\VuforiaSettings.cs" />
+    <Compile Include="Assets\Scripts\WebsiteAPI.cs" />
     <Compile Include="Assets\Scripts\YouTubeAPI.cs" />
     <None Include="Assets\Vuforia\Shaders\ColoredLines.shader" />
     <None Include="Assets\Vuforia\Shaders\CameraDiffuse.shader" />

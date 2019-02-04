@@ -1,26 +1,27 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Video;
 
 public class DisplayBehavior : MonoBehaviour {
     public MeshRenderer meshRenderer;
+    public VideoPlayer videoPlayer;
 
-    VideoPlayer lastPlayer;
-
-    private void Start() {
-        meshRenderer.gameObject.SetActive(false);
+    public void LoadVideo(string url) {
+        StartVideoPlayer();
+        GetComponent<YouTubeAPI>().LoadVideo(url);
     }
 
-    public void SetDisplay(VideoPlayer player) {
-        lastPlayer = player;
-        player.targetMaterialRenderer = meshRenderer;
-        meshRenderer.gameObject.SetActive(true);
+    public void LoadWebsite(string name) {
+        StopVideoPlayer();
+        string url = "http://www." + name + ".com";
+        GetComponent<WebsiteAPI>().LoadImage(url);
     }
 
-    public void SetDisplay(Sprite sprite) {
-        if (lastPlayer != null) lastPlayer.targetMaterialRenderer = null;
-        meshRenderer.material.mainTexture = sprite.texture;
-        meshRenderer.gameObject.SetActive(true);
+    void StopVideoPlayer() {
+        videoPlayer.Stop();
+        videoPlayer.targetMaterialRenderer = null;
+    }
+
+    void StartVideoPlayer() {
+        videoPlayer.targetMaterialRenderer = meshRenderer;
     }
 }
