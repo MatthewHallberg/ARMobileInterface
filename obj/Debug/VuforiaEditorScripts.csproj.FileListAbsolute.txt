@@ -400,3 +400,4 @@
 /Users/matthewhallberg/interface/obj/Debug/VuforiaEditorScripts.csproj.CopyComplete
 /Users/matthewhallberg/interface/obj/Debug/VuforiaEditorScripts.dll
 /Users/matthewhallberg/interface/obj/Debug/VuforiaEditorScripts.pdb
+/Users/matthewhallberg/interface/Temp/bin/Debug/TensorFlowSharp.dll

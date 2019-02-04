@@ -399,3 +399,4 @@
 /Users/matthewhallberg/interface/Temp/bin/Debug/Boo.Lang.PatternMatching.dll
 /Users/matthewhallberg/interface/Temp/bin/Debug/Boo.Lang.Parser.dll
 /Users/matthewhallberg/interface/Temp/bin/Debug/Boo.Lang.Useful.dll
+/Users/matthewhallberg/interface/Temp/bin/Debug/TensorFlowSharp.dll

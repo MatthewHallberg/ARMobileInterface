@@ -28,7 +28,7 @@ public class MessageHandler : MonoBehaviour {
             display.LoadWebsite(words[1]);
             break;
         case ("what"):
-            Debug.Log(message);
+            GetComponent<Classification>().ProcessImage();
             break;
         default:
             Debug.Log("Not found: " + message);
