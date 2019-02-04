@@ -1,5 +1,11 @@
 ﻿<Properties StartupConfiguration="{B32FE478-68C1-0622-E83B-08F04D1845B5}|">
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/DisplayBehavior.cs">
+    <Files>
+      <File FileName="Assets/Scripts/DisplayBehavior.cs" Line="5" Column="1" />
+      <File FileName="Assets/Scripts/MenuElement.cs" Line="8" Column="52" />
+      <File FileName="Assets/Scripts/hudController.cs" Line="33" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />

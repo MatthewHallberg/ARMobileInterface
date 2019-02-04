@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class hudController : MonoBehaviour {
 
-    public MenuElement web;
-    public MenuElement music;
-    public MenuElement weather;
-    public MenuElement earth;
+    [HideInInspector]
+    public DisplayBehavior currDisplay;
+    [HideInInspector]
+    public List<DisplayBehavior> displays = new List<DisplayBehavior>();
 
+    public GameObject DisplayPrefab;
+    public Transform InterfaceParent;
+    public MenuElement earth;
     public EarthBehavior earthBehavior;
 
     void OnEnable() {
@@ -19,39 +22,43 @@ public class hudController : MonoBehaviour {
         RecieveMessages.messageRecieved -= MessageRecieved;
     }
 
-    void DisableOtherWindows(string currName) {
-        foreach (MenuElement element in FindObjectsOfType<MenuElement>()) {
-            if (element.name != currName) {
-                element.Close();
-            }
-        }
-    }
-
     public void MessageRecieved(string message) {
         //first check if message is slider value
         if (int.TryParse(message, out int value)) {
             earthBehavior.SetAngle(value);
         } else {
-
-            DisableOtherWindows(message);
-
             switch (message) {
             case "web":
-                web.ToggleState();
+                Debug.Log("Web");
+                if (currDisplay != null) {
+                    currDisplay.ToggleState();
+                    earth.Close();
+                } else {
+                    CreateNewScreen();
+                }
                 break;
-            case "music":
-                music.ToggleState();
-                break;
-            case "weather":
-                weather.ToggleState();
+            case "arrow":
+                //unparent screen here
+
+
                 break;
             case "earth":
                 earth.ToggleState();
+                if (currDisplay != null)
+                    currDisplay.Close();
                 break;
             default:
                 Debug.Log(message + " not recognized");
                 break;
             }
         }
+    }
+
+    void CreateNewScreen() {
+        GameObject newDisplay = Instantiate(DisplayPrefab, InterfaceParent);
+        currDisplay = newDisplay.GetComponent<DisplayBehavior>();
+        currDisplay.startPosition = new Vector3(-.31f, .43f, .15f);
+        currDisplay.Init();
+        currDisplay.Open();
     }
 }

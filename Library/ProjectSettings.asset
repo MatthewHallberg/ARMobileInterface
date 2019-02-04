@@ -757,7 +757,7 @@ PlayerSettings:
   webGLThreadsSupport: 0
   scriptingDefineSymbols:
     1: 
-    4: VUFORIA_IOS_SETTINGS
+    4: VUFORIA_IOS_SETTINGS;ENABLE_TENSORFLOW
     7: VUFORIA_ANDROID_SETTINGS
     14: VUFORIA_WSA_SETTINGS
   platformArchitecture:

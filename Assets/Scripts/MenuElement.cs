@@ -1,70 +1,44 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.Events;
-using UnityEngine.Video;
+﻿using UnityEngine;
 
 public class MenuElement : MonoBehaviour {
 
-    public UnityEvent StartEvent;
-    public UnityEvent EndEvent;
-
     [HideInInspector]
-    public bool isOpen = false;
+    public Vector3 startPosition = new Vector3(-.351f,.025f,-.198f);
 
-    Vector3 startSize = Vector3.zero;
+    Vector3 startSize = new Vector3(.2f, .2f, .2f);
     Vector3 desiredScale = Vector3.zero;
-    Vector3 startPosition;
     Vector3 desiredPosition;
     float moveSpeed = 7f;
-    bool moveLocal = true;
-
 
     // Start is called before the first frame update
-    void Start() {
-        startPosition = transform.localPosition;
+    void Awake() {
+        Init();
+    }
+
+    public void Init() {
         desiredPosition = startPosition;
         desiredPosition.y = 0;
-        startSize = transform.localScale;
-        EndEvent.Invoke();
+        desiredScale = Vector3.zero;
+        transform.localPosition = desiredPosition;
+        transform.localScale = desiredScale;
     }
 
     // Update is called once per frame
     void Update() {
-        if (moveLocal) {
-            transform.localScale = Vector3.Lerp(transform.localScale, desiredScale, Time.deltaTime * moveSpeed);
-            transform.localPosition = Vector3.Lerp(transform.localPosition, desiredPosition, Time.deltaTime * moveSpeed);
-        }
-    }
-
-    public void MoveToScreen() {
-        moveLocal = false;
+        transform.localScale = Vector3.Lerp(transform.localScale, desiredScale, Time.deltaTime * moveSpeed);
+        transform.localPosition = Vector3.Lerp(transform.localPosition, desiredPosition, Time.deltaTime * moveSpeed);
     }
 
     public void Close() {
-        moveLocal = true;
-        isOpen = false;
         desiredScale = Vector3.zero;
         desiredPosition.y = 0;
         moveSpeed = 11f;
-        //BUG FIX: if display is showing video dont pause
-        if (EndEvent.GetPersistentEventCount() > 0) {
-            Transform child = transform.GetChild(0);
-            VideoPlayer video = child.GetComponent<VideoPlayer>();
-            MeshRenderer meshRenderer = child.GetComponent<MeshRenderer>(); 
-            if (video.targetMaterialRenderer == meshRenderer) {
-                EndEvent.Invoke();
-            }
-        }
     }
 
     public void Open() {
-        moveLocal = true;
-        isOpen = true;
         desiredScale = startSize;
         desiredPosition = startPosition;
         moveSpeed = 7f;
-        StartEvent.Invoke();
     }
 
     public void ToggleState() {

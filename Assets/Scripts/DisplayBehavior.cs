@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using UnityEngine.Video;
 
-public class DisplayBehavior : MonoBehaviour {
+public class DisplayBehavior : MenuElement {
+
     public MeshRenderer meshRenderer;
     public VideoPlayer videoPlayer;
 
