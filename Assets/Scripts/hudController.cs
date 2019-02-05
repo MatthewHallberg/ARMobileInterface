@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class hudController : MonoBehaviour {
+public class HudController : MonoBehaviour {
 
     [HideInInspector]
     public DisplayBehavior currDisplay;
@@ -11,7 +11,6 @@ public class hudController : MonoBehaviour {
     [HideInInspector]
     public List<DisplayBehavior> displays = new List<DisplayBehavior>();
 
-    public Transform GroundPlaneFinder;
     public GameObject DisplayPrefab;
     public Transform InterfaceParent;
     public MenuElement earth;
@@ -59,7 +58,7 @@ public class hudController : MonoBehaviour {
     }
 
     void UnparentScreen() {
-        currDisplay.UnParent(GroundPlaneFinder);
+        currDisplay.UnParent();
         currSelectedDisplay = currDisplay;
         displays.Add(currSelectedDisplay);
         currDisplay = null;

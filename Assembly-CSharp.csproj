@@ -64,13 +64,14 @@
     <Compile Include="Assets\Scripts\Classification.cs" />
     <Compile Include="Assets\Scripts\DisplayBehavior.cs" />
     <Compile Include="Assets\Scripts\EarthBehavior.cs" />
-    <Compile Include="Assets\Scripts\hudController.cs" />
+    <Compile Include="Assets\Scripts\HudController.cs" />
     <Compile Include="Assets\Scripts\InterfaceController.cs" />
     <Compile Include="Assets\Scripts\MenuElement.cs" />
     <Compile Include="Assets\Scripts\MessageBehavior.cs" />
     <Compile Include="Assets\Scripts\MessageHandler.cs" />
     <Compile Include="Assets\Scripts\NetworkListener.cs" />
     <Compile Include="Assets\Scripts\RecieveMessages.cs" />
+    <Compile Include="Assets\Scripts\RotationalTracking.cs" />
     <Compile Include="Assets\Scripts\SendMessages.cs" />
     <Compile Include="Assets\Scripts\TextureTools.cs" />
     <Compile Include="Assets\Scripts\VuforiaSettings.cs" />
@@ -306,15 +307,6 @@
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>/Applications/Unity/Hub/Editor/2018.3.1f1/Unity.app/Contents/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
-    <Reference Include="System.ValueTuple">
-      <HintPath>/Users/matthewhallberg/interface/Assets/ML-Agents/Plugins/System.ValueTuple.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Numerics">
-      <HintPath>/Users/matthewhallberg/interface/Assets/ML-Agents/Plugins/System.Numerics.dll</HintPath>
-    </Reference>
-    <Reference Include="TensorFlowSharp">
-      <HintPath>/Users/matthewhallberg/interface/Assets/ML-Agents/Plugins/Computer/TensorFlowSharp.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Analytics.Tracker">
       <HintPath>/Users/matthewhallberg/interface/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
@@ -323,6 +315,15 @@
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
       <HintPath>/Users/matthewhallberg/interface/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple">
+      <HintPath>/Users/matthewhallberg/interface/Assets/ML-Agents/Plugins/System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="TensorFlowSharp">
+      <HintPath>/Users/matthewhallberg/interface/Assets/ML-Agents/Plugins/Computer/TensorFlowSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics">
+      <HintPath>/Users/matthewhallberg/interface/Assets/ML-Agents/Plugins/System.Numerics.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>/Applications/Unity/Hub/Editor/2018.3.1f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>

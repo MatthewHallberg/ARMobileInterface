@@ -2,7 +2,7 @@
 
 public class MessageHandler : MonoBehaviour {
 
-    public DisplayBehavior display;
+    public HudController hudController;
 
     private void OnEnable() {
         NetworkListener.resultRecieved += GotMesssage;
@@ -14,7 +14,7 @@ public class MessageHandler : MonoBehaviour {
 
     void GotMesssage(string message) {
         if (message.Contains("youtube")) {
-            display.LoadVideo(message);
+            hudController.currSelectedDisplay.LoadVideo(message);
             return;
         }
 
@@ -25,7 +25,7 @@ public class MessageHandler : MonoBehaviour {
             Debug.Log(message);
             break;
         case ("website"):
-            display.LoadWebsite(words[1]);
+            hudController.currSelectedDisplay.LoadWebsite(words[1]);
             break;
         case ("what"):
             GetComponent<Classification>().ProcessImage();

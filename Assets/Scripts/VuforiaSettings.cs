@@ -19,6 +19,6 @@ public class VuforiaSettings : MonoBehaviour {
     IEnumerator DelaySetupRoutine() {
         yield return new WaitForSeconds(.5f);
         Debug.Log("SETTING Viewer AR mode");
-        MixedRealityController.Instance.SetMode(MixedRealityController.Mode.VIEWER_AR_DEVICETRACKER);
+        MixedRealityController.Instance.SetMode(MixedRealityController.Mode.VIEWER_AR);
     }
 }

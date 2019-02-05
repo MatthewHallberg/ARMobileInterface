@@ -41,8 +41,8 @@ public class MenuElement : MonoBehaviour {
         moveSpeed = 7f;
     }
 
-    public void UnParent(Transform newParent) {
-        transform.SetParent(newParent);
+    public void UnParent() {
+        transform.SetParent(null);
         //make positions world space and larger
         startPosition = transform.TransformPoint(startPosition);
         startPosition.y += 2;
