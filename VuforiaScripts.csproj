@@ -304,6 +304,15 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
+    <Reference Include="System.ValueTuple">
+      <HintPath>/Users/matthewhallberg/interface/Assets/ML-Agents/Plugins/System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics">
+      <HintPath>/Users/matthewhallberg/interface/Assets/ML-Agents/Plugins/System.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="TensorFlowSharp">
+      <HintPath>/Users/matthewhallberg/interface/Assets/ML-Agents/Plugins/Computer/TensorFlowSharp.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.Advertisements">
       <HintPath>/Users/matthewhallberg/interface/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
     </Reference>

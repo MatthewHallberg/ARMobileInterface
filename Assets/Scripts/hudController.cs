@@ -7,8 +7,11 @@ public class hudController : MonoBehaviour {
     [HideInInspector]
     public DisplayBehavior currDisplay;
     [HideInInspector]
+    public DisplayBehavior currSelectedDisplay;
+    [HideInInspector]
     public List<DisplayBehavior> displays = new List<DisplayBehavior>();
 
+    public Transform GroundPlaneFinder;
     public GameObject DisplayPrefab;
     public Transform InterfaceParent;
     public MenuElement earth;
@@ -39,8 +42,9 @@ public class hudController : MonoBehaviour {
                 break;
             case "arrow":
                 //unparent screen here
-
-
+                if (currDisplay != null) {
+                    UnparentScreen();
+                }
                 break;
             case "earth":
                 earth.ToggleState();
@@ -52,6 +56,13 @@ public class hudController : MonoBehaviour {
                 break;
             }
         }
+    }
+
+    void UnparentScreen() {
+        currDisplay.UnParent(GroundPlaneFinder);
+        currSelectedDisplay = currDisplay;
+        displays.Add(currSelectedDisplay);
+        currDisplay = null;
     }
 
     void CreateNewScreen() {

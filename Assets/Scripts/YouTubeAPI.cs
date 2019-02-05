@@ -51,7 +51,7 @@ public class YouTubeAPI : MonoBehaviour {
             Debug.Log("Video Loaded");
             videoPlayer.Play();
         } catch (NullReferenceException e) {
-            Debug.Log("video link cannot be found!");
+            Debug.Log(e);
         }
     }
 }

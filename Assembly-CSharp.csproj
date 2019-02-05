@@ -306,6 +306,15 @@
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>/Applications/Unity/Hub/Editor/2018.3.1f1/Unity.app/Contents/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
+    <Reference Include="System.ValueTuple">
+      <HintPath>/Users/matthewhallberg/interface/Assets/ML-Agents/Plugins/System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics">
+      <HintPath>/Users/matthewhallberg/interface/Assets/ML-Agents/Plugins/System.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="TensorFlowSharp">
+      <HintPath>/Users/matthewhallberg/interface/Assets/ML-Agents/Plugins/Computer/TensorFlowSharp.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Analytics.Tracker">
       <HintPath>/Users/matthewhallberg/interface/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>

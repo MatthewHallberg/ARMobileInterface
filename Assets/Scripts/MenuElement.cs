@@ -41,6 +41,17 @@ public class MenuElement : MonoBehaviour {
         moveSpeed = 7f;
     }
 
+    public void UnParent(Transform newParent) {
+        transform.SetParent(newParent);
+        //make positions world space and larger
+        startPosition = transform.TransformPoint(startPosition);
+        startPosition.y += 2;
+        startSize = Vector3.one * 2;
+        //set positions
+        desiredPosition = startPosition;
+        desiredScale = startSize;
+    }
+
     public void ToggleState() {
         if (desiredScale == startSize) {
             Close();
