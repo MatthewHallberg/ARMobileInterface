@@ -5130,45 +5130,45 @@ struct  Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E
 {
 public:
 	// System.Single UnityEngine.Vector4::x
-	float ___x_0;
+	float ___x_1;
 	// System.Single UnityEngine.Vector4::y
-	float ___y_1;
+	float ___y_2;
 	// System.Single UnityEngine.Vector4::z
-	float ___z_2;
+	float ___z_3;
 	// System.Single UnityEngine.Vector4::w
-	float ___w_3;
+	float ___w_4;
 
 public:
-	inline static int32_t get_offset_of_x_0() { return static_cast<int32_t>(offsetof(Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E, ___x_0)); }
-	inline float get_x_0() const { return ___x_0; }
-	inline float* get_address_of_x_0() { return &___x_0; }
-	inline void set_x_0(float value)
+	inline static int32_t get_offset_of_x_1() { return static_cast<int32_t>(offsetof(Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E, ___x_1)); }
+	inline float get_x_1() const { return ___x_1; }
+	inline float* get_address_of_x_1() { return &___x_1; }
+	inline void set_x_1(float value)
 	{
-		___x_0 = value;
+		___x_1 = value;
 	}
 
-	inline static int32_t get_offset_of_y_1() { return static_cast<int32_t>(offsetof(Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E, ___y_1)); }
-	inline float get_y_1() const { return ___y_1; }
-	inline float* get_address_of_y_1() { return &___y_1; }
-	inline void set_y_1(float value)
+	inline static int32_t get_offset_of_y_2() { return static_cast<int32_t>(offsetof(Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E, ___y_2)); }
+	inline float get_y_2() const { return ___y_2; }
+	inline float* get_address_of_y_2() { return &___y_2; }
+	inline void set_y_2(float value)
 	{
-		___y_1 = value;
+		___y_2 = value;
 	}
 
-	inline static int32_t get_offset_of_z_2() { return static_cast<int32_t>(offsetof(Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E, ___z_2)); }
-	inline float get_z_2() const { return ___z_2; }
-	inline float* get_address_of_z_2() { return &___z_2; }
-	inline void set_z_2(float value)
+	inline static int32_t get_offset_of_z_3() { return static_cast<int32_t>(offsetof(Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E, ___z_3)); }
+	inline float get_z_3() const { return ___z_3; }
+	inline float* get_address_of_z_3() { return &___z_3; }
+	inline void set_z_3(float value)
 	{
-		___z_2 = value;
+		___z_3 = value;
 	}
 
-	inline static int32_t get_offset_of_w_3() { return static_cast<int32_t>(offsetof(Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E, ___w_3)); }
-	inline float get_w_3() const { return ___w_3; }
-	inline float* get_address_of_w_3() { return &___w_3; }
-	inline void set_w_3(float value)
+	inline static int32_t get_offset_of_w_4() { return static_cast<int32_t>(offsetof(Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E, ___w_4)); }
+	inline float get_w_4() const { return ___w_4; }
+	inline float* get_address_of_w_4() { return &___w_4; }
+	inline void set_w_4(float value)
 	{
-		___w_3 = value;
+		___w_4 = value;
 	}
 };
 
@@ -5176,45 +5176,45 @@ struct Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E_StaticFields
 {
 public:
 	// UnityEngine.Vector4 UnityEngine.Vector4::zeroVector
-	Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E  ___zeroVector_4;
+	Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E  ___zeroVector_5;
 	// UnityEngine.Vector4 UnityEngine.Vector4::oneVector
-	Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E  ___oneVector_5;
+	Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E  ___oneVector_6;
 	// UnityEngine.Vector4 UnityEngine.Vector4::positiveInfinityVector
-	Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E  ___positiveInfinityVector_6;
+	Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E  ___positiveInfinityVector_7;
 	// UnityEngine.Vector4 UnityEngine.Vector4::negativeInfinityVector
-	Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E  ___negativeInfinityVector_7;
+	Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E  ___negativeInfinityVector_8;
 
 public:
-	inline static int32_t get_offset_of_zeroVector_4() { return static_cast<int32_t>(offsetof(Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E_StaticFields, ___zeroVector_4)); }
-	inline Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E  get_zeroVector_4() const { return ___zeroVector_4; }
-	inline Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E * get_address_of_zeroVector_4() { return &___zeroVector_4; }
-	inline void set_zeroVector_4(Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E  value)
+	inline static int32_t get_offset_of_zeroVector_5() { return static_cast<int32_t>(offsetof(Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E_StaticFields, ___zeroVector_5)); }
+	inline Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E  get_zeroVector_5() const { return ___zeroVector_5; }
+	inline Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E * get_address_of_zeroVector_5() { return &___zeroVector_5; }
+	inline void set_zeroVector_5(Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E  value)
 	{
-		___zeroVector_4 = value;
+		___zeroVector_5 = value;
 	}
 
-	inline static int32_t get_offset_of_oneVector_5() { return static_cast<int32_t>(offsetof(Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E_StaticFields, ___oneVector_5)); }
-	inline Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E  get_oneVector_5() const { return ___oneVector_5; }
-	inline Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E * get_address_of_oneVector_5() { return &___oneVector_5; }
-	inline void set_oneVector_5(Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E  value)
+	inline static int32_t get_offset_of_oneVector_6() { return static_cast<int32_t>(offsetof(Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E_StaticFields, ___oneVector_6)); }
+	inline Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E  get_oneVector_6() const { return ___oneVector_6; }
+	inline Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E * get_address_of_oneVector_6() { return &___oneVector_6; }
+	inline void set_oneVector_6(Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E  value)
 	{
-		___oneVector_5 = value;
+		___oneVector_6 = value;
 	}
 
-	inline static int32_t get_offset_of_positiveInfinityVector_6() { return static_cast<int32_t>(offsetof(Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E_StaticFields, ___positiveInfinityVector_6)); }
-	inline Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E  get_positiveInfinityVector_6() const { return ___positiveInfinityVector_6; }
-	inline Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E * get_address_of_positiveInfinityVector_6() { return &___positiveInfinityVector_6; }
-	inline void set_positiveInfinityVector_6(Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E  value)
+	inline static int32_t get_offset_of_positiveInfinityVector_7() { return static_cast<int32_t>(offsetof(Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E_StaticFields, ___positiveInfinityVector_7)); }
+	inline Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E  get_positiveInfinityVector_7() const { return ___positiveInfinityVector_7; }
+	inline Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E * get_address_of_positiveInfinityVector_7() { return &___positiveInfinityVector_7; }
+	inline void set_positiveInfinityVector_7(Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E  value)
 	{
-		___positiveInfinityVector_6 = value;
+		___positiveInfinityVector_7 = value;
 	}
 
-	inline static int32_t get_offset_of_negativeInfinityVector_7() { return static_cast<int32_t>(offsetof(Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E_StaticFields, ___negativeInfinityVector_7)); }
-	inline Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E  get_negativeInfinityVector_7() const { return ___negativeInfinityVector_7; }
-	inline Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E * get_address_of_negativeInfinityVector_7() { return &___negativeInfinityVector_7; }
-	inline void set_negativeInfinityVector_7(Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E  value)
+	inline static int32_t get_offset_of_negativeInfinityVector_8() { return static_cast<int32_t>(offsetof(Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E_StaticFields, ___negativeInfinityVector_8)); }
+	inline Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E  get_negativeInfinityVector_8() const { return ___negativeInfinityVector_8; }
+	inline Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E * get_address_of_negativeInfinityVector_8() { return &___negativeInfinityVector_8; }
+	inline void set_negativeInfinityVector_8(Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E  value)
 	{
-		___negativeInfinityVector_7 = value;
+		___negativeInfinityVector_8 = value;
 	}
 };
 
@@ -17193,8 +17193,8 @@ extern "C" IL2CPP_METHOD_ATTR void Graphic_OnPopulateMesh_mC25D45C5B729EEB66D7E1
 		NullCheck(L_9);
 		VertexHelper_Clear_m811CC2BB4DBD7778A9708FCEE04BAA2107721BD7(L_9, /*hidden argument*/NULL);
 		VertexHelper_t27373EA2CF0F5810EC8CF873D0A6D6C0B23DAC3F * L_10 = ___vh0;
-		float L_11 = (&V_1)->get_x_0();
-		float L_12 = (&V_1)->get_y_1();
+		float L_11 = (&V_1)->get_x_1();
+		float L_12 = (&V_1)->get_y_2();
 		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_13;
 		memset(&L_13, 0, sizeof(L_13));
 		Vector3__ctor_m6AD8F21FFCC7723C6F507CCF2E4E2EFFC4871584((&L_13), L_11, L_12, /*hidden argument*/NULL);
@@ -17205,8 +17205,8 @@ extern "C" IL2CPP_METHOD_ATTR void Graphic_OnPopulateMesh_mC25D45C5B729EEB66D7E1
 		NullCheck(L_10);
 		VertexHelper_AddVert_m4BD3CA0EFB385C202A37712C41D6B502B3611A8D(L_10, L_13, L_14, L_15, /*hidden argument*/NULL);
 		VertexHelper_t27373EA2CF0F5810EC8CF873D0A6D6C0B23DAC3F * L_16 = ___vh0;
-		float L_17 = (&V_1)->get_x_0();
-		float L_18 = (&V_1)->get_w_3();
+		float L_17 = (&V_1)->get_x_1();
+		float L_18 = (&V_1)->get_w_4();
 		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_19;
 		memset(&L_19, 0, sizeof(L_19));
 		Vector3__ctor_m6AD8F21FFCC7723C6F507CCF2E4E2EFFC4871584((&L_19), L_17, L_18, /*hidden argument*/NULL);
@@ -17217,8 +17217,8 @@ extern "C" IL2CPP_METHOD_ATTR void Graphic_OnPopulateMesh_mC25D45C5B729EEB66D7E1
 		NullCheck(L_16);
 		VertexHelper_AddVert_m4BD3CA0EFB385C202A37712C41D6B502B3611A8D(L_16, L_19, L_20, L_21, /*hidden argument*/NULL);
 		VertexHelper_t27373EA2CF0F5810EC8CF873D0A6D6C0B23DAC3F * L_22 = ___vh0;
-		float L_23 = (&V_1)->get_z_2();
-		float L_24 = (&V_1)->get_w_3();
+		float L_23 = (&V_1)->get_z_3();
+		float L_24 = (&V_1)->get_w_4();
 		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_25;
 		memset(&L_25, 0, sizeof(L_25));
 		Vector3__ctor_m6AD8F21FFCC7723C6F507CCF2E4E2EFFC4871584((&L_25), L_23, L_24, /*hidden argument*/NULL);
@@ -17229,8 +17229,8 @@ extern "C" IL2CPP_METHOD_ATTR void Graphic_OnPopulateMesh_mC25D45C5B729EEB66D7E1
 		NullCheck(L_22);
 		VertexHelper_AddVert_m4BD3CA0EFB385C202A37712C41D6B502B3611A8D(L_22, L_25, L_26, L_27, /*hidden argument*/NULL);
 		VertexHelper_t27373EA2CF0F5810EC8CF873D0A6D6C0B23DAC3F * L_28 = ___vh0;
-		float L_29 = (&V_1)->get_z_2();
-		float L_30 = (&V_1)->get_y_1();
+		float L_29 = (&V_1)->get_z_3();
+		float L_30 = (&V_1)->get_y_2();
 		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_31;
 		memset(&L_31, 0, sizeof(L_31));
 		Vector3__ctor_m6AD8F21FFCC7723C6F507CCF2E4E2EFFC4871584((&L_31), L_29, L_30, /*hidden argument*/NULL);
@@ -22629,15 +22629,15 @@ IL_006e:
 		float L_18 = (&V_1)->get_y_1();
 		int32_t L_19 = Mathf_RoundToInt_m0EAD8BD38FCB72FA1D8A04E96337C820EC83F041(L_18, /*hidden argument*/NULL);
 		V_6 = L_19;
-		float L_20 = (&V_0)->get_x_0();
+		float L_20 = (&V_0)->get_x_1();
 		int32_t L_21 = V_5;
-		float L_22 = (&V_0)->get_y_1();
+		float L_22 = (&V_0)->get_y_2();
 		int32_t L_23 = V_6;
 		int32_t L_24 = V_5;
-		float L_25 = (&V_0)->get_z_2();
+		float L_25 = (&V_0)->get_z_3();
 		int32_t L_26 = V_5;
 		int32_t L_27 = V_6;
-		float L_28 = (&V_0)->get_w_3();
+		float L_28 = (&V_0)->get_w_4();
 		int32_t L_29 = V_6;
 		Vector4__ctor_m545458525879607A5392A10B175D0C19B2BC715D((Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E *)(&V_7), ((float)((float)L_20/(float)(((float)((float)L_21))))), ((float)((float)L_22/(float)(((float)((float)L_23))))), ((float)((float)((float)il2cpp_codegen_subtract((float)(((float)((float)L_24))), (float)L_25))/(float)(((float)((float)L_26))))), ((float)((float)((float)il2cpp_codegen_subtract((float)(((float)((float)L_27))), (float)L_28))/(float)(((float)((float)L_29))))), /*hidden argument*/NULL);
 		bool L_30 = ___shouldPreserveAspect0;
@@ -22662,16 +22662,16 @@ IL_00f0:
 	{
 		float L_33 = Rect_get_x_mC51A461F546D14832EB96B11A7198DADDE2597B7((Rect_t35B976DE901B5423C11705E156938EA27AB402CE *)(&V_4), /*hidden argument*/NULL);
 		float L_34 = Rect_get_width_m54FF69FC2C086E2DC349ED091FD0D6576BFB1484((Rect_t35B976DE901B5423C11705E156938EA27AB402CE *)(&V_4), /*hidden argument*/NULL);
-		float L_35 = (&V_7)->get_x_0();
+		float L_35 = (&V_7)->get_x_1();
 		float L_36 = Rect_get_y_m53E3E4F62D9840FBEA751A66293038F1F5D1D45C((Rect_t35B976DE901B5423C11705E156938EA27AB402CE *)(&V_4), /*hidden argument*/NULL);
 		float L_37 = Rect_get_height_m088C36990E0A255C5D7DCE36575DCE23ABB364B5((Rect_t35B976DE901B5423C11705E156938EA27AB402CE *)(&V_4), /*hidden argument*/NULL);
-		float L_38 = (&V_7)->get_y_1();
+		float L_38 = (&V_7)->get_y_2();
 		float L_39 = Rect_get_x_mC51A461F546D14832EB96B11A7198DADDE2597B7((Rect_t35B976DE901B5423C11705E156938EA27AB402CE *)(&V_4), /*hidden argument*/NULL);
 		float L_40 = Rect_get_width_m54FF69FC2C086E2DC349ED091FD0D6576BFB1484((Rect_t35B976DE901B5423C11705E156938EA27AB402CE *)(&V_4), /*hidden argument*/NULL);
-		float L_41 = (&V_7)->get_z_2();
+		float L_41 = (&V_7)->get_z_3();
 		float L_42 = Rect_get_y_m53E3E4F62D9840FBEA751A66293038F1F5D1D45C((Rect_t35B976DE901B5423C11705E156938EA27AB402CE *)(&V_4), /*hidden argument*/NULL);
 		float L_43 = Rect_get_height_m088C36990E0A255C5D7DCE36575DCE23ABB364B5((Rect_t35B976DE901B5423C11705E156938EA27AB402CE *)(&V_4), /*hidden argument*/NULL);
-		float L_44 = (&V_7)->get_w_3();
+		float L_44 = (&V_7)->get_w_4();
 		Vector4__ctor_m545458525879607A5392A10B175D0C19B2BC715D((Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E *)(&V_7), ((float)il2cpp_codegen_add((float)L_33, (float)((float)il2cpp_codegen_multiply((float)L_34, (float)L_35)))), ((float)il2cpp_codegen_add((float)L_36, (float)((float)il2cpp_codegen_multiply((float)L_37, (float)L_38)))), ((float)il2cpp_codegen_add((float)L_39, (float)((float)il2cpp_codegen_multiply((float)L_40, (float)L_41)))), ((float)il2cpp_codegen_add((float)L_42, (float)((float)il2cpp_codegen_multiply((float)L_43, (float)L_44)))), /*hidden argument*/NULL);
 		Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E  L_45 = V_7;
 		V_8 = L_45;
@@ -23034,60 +23034,60 @@ IL_002f:
 		NullCheck(L_8);
 		VertexHelper_Clear_m811CC2BB4DBD7778A9708FCEE04BAA2107721BD7(L_8, /*hidden argument*/NULL);
 		VertexHelper_t27373EA2CF0F5810EC8CF873D0A6D6C0B23DAC3F * L_9 = ___vh0;
-		float L_10 = (&V_0)->get_x_0();
-		float L_11 = (&V_0)->get_y_1();
+		float L_10 = (&V_0)->get_x_1();
+		float L_11 = (&V_0)->get_y_2();
 		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_12;
 		memset(&L_12, 0, sizeof(L_12));
 		Vector3__ctor_m6AD8F21FFCC7723C6F507CCF2E4E2EFFC4871584((&L_12), L_10, L_11, /*hidden argument*/NULL);
 		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_13 = V_2;
 		Color32_t23ABC4AE0E0BDFD2E22EE1FA0DA3904FFE5F6E23  L_14 = Color32_op_Implicit_m52B034473369A651C8952BD916A2AB193E0E5B30(L_13, /*hidden argument*/NULL);
-		float L_15 = (&V_1)->get_x_0();
-		float L_16 = (&V_1)->get_y_1();
+		float L_15 = (&V_1)->get_x_1();
+		float L_16 = (&V_1)->get_y_2();
 		Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  L_17;
 		memset(&L_17, 0, sizeof(L_17));
 		Vector2__ctor_mEE8FB117AB1F8DB746FB8B3EB4C0DA3BF2A230D0((&L_17), L_15, L_16, /*hidden argument*/NULL);
 		NullCheck(L_9);
 		VertexHelper_AddVert_m4BD3CA0EFB385C202A37712C41D6B502B3611A8D(L_9, L_12, L_14, L_17, /*hidden argument*/NULL);
 		VertexHelper_t27373EA2CF0F5810EC8CF873D0A6D6C0B23DAC3F * L_18 = ___vh0;
-		float L_19 = (&V_0)->get_x_0();
-		float L_20 = (&V_0)->get_w_3();
+		float L_19 = (&V_0)->get_x_1();
+		float L_20 = (&V_0)->get_w_4();
 		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_21;
 		memset(&L_21, 0, sizeof(L_21));
 		Vector3__ctor_m6AD8F21FFCC7723C6F507CCF2E4E2EFFC4871584((&L_21), L_19, L_20, /*hidden argument*/NULL);
 		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_22 = V_2;
 		Color32_t23ABC4AE0E0BDFD2E22EE1FA0DA3904FFE5F6E23  L_23 = Color32_op_Implicit_m52B034473369A651C8952BD916A2AB193E0E5B30(L_22, /*hidden argument*/NULL);
-		float L_24 = (&V_1)->get_x_0();
-		float L_25 = (&V_1)->get_w_3();
+		float L_24 = (&V_1)->get_x_1();
+		float L_25 = (&V_1)->get_w_4();
 		Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  L_26;
 		memset(&L_26, 0, sizeof(L_26));
 		Vector2__ctor_mEE8FB117AB1F8DB746FB8B3EB4C0DA3BF2A230D0((&L_26), L_24, L_25, /*hidden argument*/NULL);
 		NullCheck(L_18);
 		VertexHelper_AddVert_m4BD3CA0EFB385C202A37712C41D6B502B3611A8D(L_18, L_21, L_23, L_26, /*hidden argument*/NULL);
 		VertexHelper_t27373EA2CF0F5810EC8CF873D0A6D6C0B23DAC3F * L_27 = ___vh0;
-		float L_28 = (&V_0)->get_z_2();
-		float L_29 = (&V_0)->get_w_3();
+		float L_28 = (&V_0)->get_z_3();
+		float L_29 = (&V_0)->get_w_4();
 		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_30;
 		memset(&L_30, 0, sizeof(L_30));
 		Vector3__ctor_m6AD8F21FFCC7723C6F507CCF2E4E2EFFC4871584((&L_30), L_28, L_29, /*hidden argument*/NULL);
 		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_31 = V_2;
 		Color32_t23ABC4AE0E0BDFD2E22EE1FA0DA3904FFE5F6E23  L_32 = Color32_op_Implicit_m52B034473369A651C8952BD916A2AB193E0E5B30(L_31, /*hidden argument*/NULL);
-		float L_33 = (&V_1)->get_z_2();
-		float L_34 = (&V_1)->get_w_3();
+		float L_33 = (&V_1)->get_z_3();
+		float L_34 = (&V_1)->get_w_4();
 		Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  L_35;
 		memset(&L_35, 0, sizeof(L_35));
 		Vector2__ctor_mEE8FB117AB1F8DB746FB8B3EB4C0DA3BF2A230D0((&L_35), L_33, L_34, /*hidden argument*/NULL);
 		NullCheck(L_27);
 		VertexHelper_AddVert_m4BD3CA0EFB385C202A37712C41D6B502B3611A8D(L_27, L_30, L_32, L_35, /*hidden argument*/NULL);
 		VertexHelper_t27373EA2CF0F5810EC8CF873D0A6D6C0B23DAC3F * L_36 = ___vh0;
-		float L_37 = (&V_0)->get_z_2();
-		float L_38 = (&V_0)->get_y_1();
+		float L_37 = (&V_0)->get_z_3();
+		float L_38 = (&V_0)->get_y_2();
 		Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  L_39;
 		memset(&L_39, 0, sizeof(L_39));
 		Vector3__ctor_m6AD8F21FFCC7723C6F507CCF2E4E2EFFC4871584((&L_39), L_37, L_38, /*hidden argument*/NULL);
 		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_40 = V_2;
 		Color32_t23ABC4AE0E0BDFD2E22EE1FA0DA3904FFE5F6E23  L_41 = Color32_op_Implicit_m52B034473369A651C8952BD916A2AB193E0E5B30(L_40, /*hidden argument*/NULL);
-		float L_42 = (&V_1)->get_z_2();
-		float L_43 = (&V_1)->get_y_1();
+		float L_42 = (&V_1)->get_z_3();
+		float L_43 = (&V_1)->get_y_2();
 		Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  L_44;
 		memset(&L_44, 0, sizeof(L_44));
 		Vector2__ctor_mEE8FB117AB1F8DB746FB8B3EB4C0DA3BF2A230D0((&L_44), L_42, L_43, /*hidden argument*/NULL);
@@ -23403,8 +23403,8 @@ IL_007c:
 		IL2CPP_RUNTIME_CLASS_INIT(Image_t18FED07D8646917E1C563745518CF3DD57FF0B3E_il2cpp_TypeInfo_var);
 		Vector2U5BU5D_tA065A07DFC060C1B8786BBAA5F3A6577CCEB27D6* L_25 = ((Image_t18FED07D8646917E1C563745518CF3DD57FF0B3E_StaticFields*)il2cpp_codegen_static_fields_for(Image_t18FED07D8646917E1C563745518CF3DD57FF0B3E_il2cpp_TypeInfo_var))->get_s_VertScratch_43();
 		NullCheck(L_25);
-		float L_26 = (&V_2)->get_x_0();
-		float L_27 = (&V_2)->get_y_1();
+		float L_26 = (&V_2)->get_x_1();
+		float L_27 = (&V_2)->get_y_2();
 		Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  L_28;
 		memset(&L_28, 0, sizeof(L_28));
 		Vector2__ctor_mEE8FB117AB1F8DB746FB8B3EB4C0DA3BF2A230D0((&L_28), L_26, L_27, /*hidden argument*/NULL);
@@ -23412,30 +23412,30 @@ IL_007c:
 		Vector2U5BU5D_tA065A07DFC060C1B8786BBAA5F3A6577CCEB27D6* L_29 = ((Image_t18FED07D8646917E1C563745518CF3DD57FF0B3E_StaticFields*)il2cpp_codegen_static_fields_for(Image_t18FED07D8646917E1C563745518CF3DD57FF0B3E_il2cpp_TypeInfo_var))->get_s_VertScratch_43();
 		NullCheck(L_29);
 		float L_30 = Rect_get_width_m54FF69FC2C086E2DC349ED091FD0D6576BFB1484((Rect_t35B976DE901B5423C11705E156938EA27AB402CE *)(&V_4), /*hidden argument*/NULL);
-		float L_31 = (&V_2)->get_z_2();
+		float L_31 = (&V_2)->get_z_3();
 		float L_32 = Rect_get_height_m088C36990E0A255C5D7DCE36575DCE23ABB364B5((Rect_t35B976DE901B5423C11705E156938EA27AB402CE *)(&V_4), /*hidden argument*/NULL);
-		float L_33 = (&V_2)->get_w_3();
+		float L_33 = (&V_2)->get_w_4();
 		Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  L_34;
 		memset(&L_34, 0, sizeof(L_34));
 		Vector2__ctor_mEE8FB117AB1F8DB746FB8B3EB4C0DA3BF2A230D0((&L_34), ((float)il2cpp_codegen_subtract((float)L_30, (float)L_31)), ((float)il2cpp_codegen_subtract((float)L_32, (float)L_33)), /*hidden argument*/NULL);
 		*(Vector2_tA85D2DD88578276CA8A8796756458277E72D073D *)((L_29)->GetAddressAt(static_cast<il2cpp_array_size_t>(3))) = L_34;
 		Vector2U5BU5D_tA065A07DFC060C1B8786BBAA5F3A6577CCEB27D6* L_35 = ((Image_t18FED07D8646917E1C563745518CF3DD57FF0B3E_StaticFields*)il2cpp_codegen_static_fields_for(Image_t18FED07D8646917E1C563745518CF3DD57FF0B3E_il2cpp_TypeInfo_var))->get_s_VertScratch_43();
 		NullCheck(L_35);
-		float L_36 = (&V_5)->get_x_0();
+		float L_36 = (&V_5)->get_x_1();
 		((L_35)->GetAddressAt(static_cast<il2cpp_array_size_t>(1)))->set_x_0(L_36);
 		Vector2U5BU5D_tA065A07DFC060C1B8786BBAA5F3A6577CCEB27D6* L_37 = ((Image_t18FED07D8646917E1C563745518CF3DD57FF0B3E_StaticFields*)il2cpp_codegen_static_fields_for(Image_t18FED07D8646917E1C563745518CF3DD57FF0B3E_il2cpp_TypeInfo_var))->get_s_VertScratch_43();
 		NullCheck(L_37);
-		float L_38 = (&V_5)->get_y_1();
+		float L_38 = (&V_5)->get_y_2();
 		((L_37)->GetAddressAt(static_cast<il2cpp_array_size_t>(1)))->set_y_1(L_38);
 		Vector2U5BU5D_tA065A07DFC060C1B8786BBAA5F3A6577CCEB27D6* L_39 = ((Image_t18FED07D8646917E1C563745518CF3DD57FF0B3E_StaticFields*)il2cpp_codegen_static_fields_for(Image_t18FED07D8646917E1C563745518CF3DD57FF0B3E_il2cpp_TypeInfo_var))->get_s_VertScratch_43();
 		NullCheck(L_39);
 		float L_40 = Rect_get_width_m54FF69FC2C086E2DC349ED091FD0D6576BFB1484((Rect_t35B976DE901B5423C11705E156938EA27AB402CE *)(&V_4), /*hidden argument*/NULL);
-		float L_41 = (&V_5)->get_z_2();
+		float L_41 = (&V_5)->get_z_3();
 		((L_39)->GetAddressAt(static_cast<il2cpp_array_size_t>(2)))->set_x_0(((float)il2cpp_codegen_subtract((float)L_40, (float)L_41)));
 		Vector2U5BU5D_tA065A07DFC060C1B8786BBAA5F3A6577CCEB27D6* L_42 = ((Image_t18FED07D8646917E1C563745518CF3DD57FF0B3E_StaticFields*)il2cpp_codegen_static_fields_for(Image_t18FED07D8646917E1C563745518CF3DD57FF0B3E_il2cpp_TypeInfo_var))->get_s_VertScratch_43();
 		NullCheck(L_42);
 		float L_43 = Rect_get_height_m088C36990E0A255C5D7DCE36575DCE23ABB364B5((Rect_t35B976DE901B5423C11705E156938EA27AB402CE *)(&V_4), /*hidden argument*/NULL);
-		float L_44 = (&V_5)->get_w_3();
+		float L_44 = (&V_5)->get_w_4();
 		((L_42)->GetAddressAt(static_cast<il2cpp_array_size_t>(2)))->set_y_1(((float)il2cpp_codegen_subtract((float)L_43, (float)L_44)));
 		V_6 = 0;
 		goto IL_01b7;
@@ -23474,32 +23474,32 @@ IL_01b7:
 		IL2CPP_RUNTIME_CLASS_INIT(Image_t18FED07D8646917E1C563745518CF3DD57FF0B3E_il2cpp_TypeInfo_var);
 		Vector2U5BU5D_tA065A07DFC060C1B8786BBAA5F3A6577CCEB27D6* L_57 = ((Image_t18FED07D8646917E1C563745518CF3DD57FF0B3E_StaticFields*)il2cpp_codegen_static_fields_for(Image_t18FED07D8646917E1C563745518CF3DD57FF0B3E_il2cpp_TypeInfo_var))->get_s_UVScratch_44();
 		NullCheck(L_57);
-		float L_58 = (&V_0)->get_x_0();
-		float L_59 = (&V_0)->get_y_1();
+		float L_58 = (&V_0)->get_x_1();
+		float L_59 = (&V_0)->get_y_2();
 		Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  L_60;
 		memset(&L_60, 0, sizeof(L_60));
 		Vector2__ctor_mEE8FB117AB1F8DB746FB8B3EB4C0DA3BF2A230D0((&L_60), L_58, L_59, /*hidden argument*/NULL);
 		*(Vector2_tA85D2DD88578276CA8A8796756458277E72D073D *)((L_57)->GetAddressAt(static_cast<il2cpp_array_size_t>(0))) = L_60;
 		Vector2U5BU5D_tA065A07DFC060C1B8786BBAA5F3A6577CCEB27D6* L_61 = ((Image_t18FED07D8646917E1C563745518CF3DD57FF0B3E_StaticFields*)il2cpp_codegen_static_fields_for(Image_t18FED07D8646917E1C563745518CF3DD57FF0B3E_il2cpp_TypeInfo_var))->get_s_UVScratch_44();
 		NullCheck(L_61);
-		float L_62 = (&V_1)->get_x_0();
-		float L_63 = (&V_1)->get_y_1();
+		float L_62 = (&V_1)->get_x_1();
+		float L_63 = (&V_1)->get_y_2();
 		Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  L_64;
 		memset(&L_64, 0, sizeof(L_64));
 		Vector2__ctor_mEE8FB117AB1F8DB746FB8B3EB4C0DA3BF2A230D0((&L_64), L_62, L_63, /*hidden argument*/NULL);
 		*(Vector2_tA85D2DD88578276CA8A8796756458277E72D073D *)((L_61)->GetAddressAt(static_cast<il2cpp_array_size_t>(1))) = L_64;
 		Vector2U5BU5D_tA065A07DFC060C1B8786BBAA5F3A6577CCEB27D6* L_65 = ((Image_t18FED07D8646917E1C563745518CF3DD57FF0B3E_StaticFields*)il2cpp_codegen_static_fields_for(Image_t18FED07D8646917E1C563745518CF3DD57FF0B3E_il2cpp_TypeInfo_var))->get_s_UVScratch_44();
 		NullCheck(L_65);
-		float L_66 = (&V_1)->get_z_2();
-		float L_67 = (&V_1)->get_w_3();
+		float L_66 = (&V_1)->get_z_3();
+		float L_67 = (&V_1)->get_w_4();
 		Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  L_68;
 		memset(&L_68, 0, sizeof(L_68));
 		Vector2__ctor_mEE8FB117AB1F8DB746FB8B3EB4C0DA3BF2A230D0((&L_68), L_66, L_67, /*hidden argument*/NULL);
 		*(Vector2_tA85D2DD88578276CA8A8796756458277E72D073D *)((L_65)->GetAddressAt(static_cast<il2cpp_array_size_t>(2))) = L_68;
 		Vector2U5BU5D_tA065A07DFC060C1B8786BBAA5F3A6577CCEB27D6* L_69 = ((Image_t18FED07D8646917E1C563745518CF3DD57FF0B3E_StaticFields*)il2cpp_codegen_static_fields_for(Image_t18FED07D8646917E1C563745518CF3DD57FF0B3E_il2cpp_TypeInfo_var))->get_s_UVScratch_44();
 		NullCheck(L_69);
-		float L_70 = (&V_0)->get_z_2();
-		float L_71 = (&V_0)->get_w_3();
+		float L_70 = (&V_0)->get_z_3();
+		float L_71 = (&V_0)->get_w_4();
 		Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  L_72;
 		memset(&L_72, 0, sizeof(L_72));
 		Vector2__ctor_mEE8FB117AB1F8DB746FB8B3EB4C0DA3BF2A230D0((&L_72), L_70, L_71, /*hidden argument*/NULL);
@@ -23741,13 +23741,13 @@ IL_0076:
 		Rect_t35B976DE901B5423C11705E156938EA27AB402CE  L_16 = Graphic_GetPixelAdjustedRect_m3A21C77CAE311C9CC07AF2AC30FACFF45F3E4245(__this, /*hidden argument*/NULL);
 		V_5 = L_16;
 		float L_17 = (&V_3)->get_x_0();
-		float L_18 = (&V_2)->get_x_0();
-		float L_19 = (&V_2)->get_z_2();
+		float L_18 = (&V_2)->get_x_1();
+		float L_19 = (&V_2)->get_z_3();
 		float L_20 = Image_get_pixelsPerUnit_mCB9366C250CB2A844EBF38989D82483D0E4003BB(__this, /*hidden argument*/NULL);
 		V_6 = ((float)((float)((float)il2cpp_codegen_subtract((float)((float)il2cpp_codegen_subtract((float)L_17, (float)L_18)), (float)L_19))/(float)L_20));
 		float L_21 = (&V_3)->get_y_1();
-		float L_22 = (&V_2)->get_y_1();
-		float L_23 = (&V_2)->get_w_3();
+		float L_22 = (&V_2)->get_y_2();
+		float L_23 = (&V_2)->get_w_4();
 		float L_24 = Image_get_pixelsPerUnit_mCB9366C250CB2A844EBF38989D82483D0E4003BB(__this, /*hidden argument*/NULL);
 		V_7 = ((float)((float)((float)il2cpp_codegen_subtract((float)((float)il2cpp_codegen_subtract((float)L_21, (float)L_22)), (float)L_23))/(float)L_24));
 		Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E  L_25 = V_2;
@@ -23757,21 +23757,21 @@ IL_0076:
 		Rect_t35B976DE901B5423C11705E156938EA27AB402CE  L_28 = V_5;
 		Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E  L_29 = Image_GetAdjustedBorders_mF1F67092B4B4468C8889DB295BE42BB06F4D8380(__this, L_27, L_28, /*hidden argument*/NULL);
 		V_2 = L_29;
-		float L_30 = (&V_1)->get_x_0();
-		float L_31 = (&V_1)->get_y_1();
+		float L_30 = (&V_1)->get_x_1();
+		float L_31 = (&V_1)->get_y_2();
 		Vector2__ctor_mEE8FB117AB1F8DB746FB8B3EB4C0DA3BF2A230D0((Vector2_tA85D2DD88578276CA8A8796756458277E72D073D *)(&V_8), L_30, L_31, /*hidden argument*/NULL);
-		float L_32 = (&V_1)->get_z_2();
-		float L_33 = (&V_1)->get_w_3();
+		float L_32 = (&V_1)->get_z_3();
+		float L_33 = (&V_1)->get_w_4();
 		Vector2__ctor_mEE8FB117AB1F8DB746FB8B3EB4C0DA3BF2A230D0((Vector2_tA85D2DD88578276CA8A8796756458277E72D073D *)(&V_9), L_32, L_33, /*hidden argument*/NULL);
-		float L_34 = (&V_2)->get_x_0();
+		float L_34 = (&V_2)->get_x_1();
 		V_10 = L_34;
 		float L_35 = Rect_get_width_m54FF69FC2C086E2DC349ED091FD0D6576BFB1484((Rect_t35B976DE901B5423C11705E156938EA27AB402CE *)(&V_5), /*hidden argument*/NULL);
-		float L_36 = (&V_2)->get_z_2();
+		float L_36 = (&V_2)->get_z_3();
 		V_11 = ((float)il2cpp_codegen_subtract((float)L_35, (float)L_36));
-		float L_37 = (&V_2)->get_y_1();
+		float L_37 = (&V_2)->get_y_2();
 		V_12 = L_37;
 		float L_38 = Rect_get_height_m088C36990E0A255C5D7DCE36575DCE23ABB364B5((Rect_t35B976DE901B5423C11705E156938EA27AB402CE *)(&V_5), /*hidden argument*/NULL);
-		float L_39 = (&V_2)->get_w_3();
+		float L_39 = (&V_2)->get_w_4();
 		V_13 = ((float)il2cpp_codegen_subtract((float)L_38, (float)L_39));
 		VertexHelper_t27373EA2CF0F5810EC8CF873D0A6D6C0B23DAC3F * L_40 = ___toFill0;
 		NullCheck(L_40);
@@ -24242,7 +24242,7 @@ IL_05ab:
 		Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  L_209 = Vector2_op_Addition_m81A4D928B8E399DA3A4E3ACD8937EDFDCB014682(L_207, L_208, /*hidden argument*/NULL);
 		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_210 = VirtFuncInvoker0< Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  >::Invoke(22 /* UnityEngine.Color UnityEngine.UI.Graphic::get_color() */, __this);
 		Color32_t23ABC4AE0E0BDFD2E22EE1FA0DA3904FFE5F6E23  L_211 = Color32_op_Implicit_m52B034473369A651C8952BD916A2AB193E0E5B30(L_210, /*hidden argument*/NULL);
-		float L_212 = (&V_0)->get_x_0();
+		float L_212 = (&V_0)->get_x_1();
 		float L_213 = (&V_8)->get_y_1();
 		Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  L_214;
 		memset(&L_214, 0, sizeof(L_214));
@@ -24276,7 +24276,7 @@ IL_05ab:
 		Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  L_233;
 		memset(&L_233, 0, sizeof(L_233));
 		Vector2__ctor_mEE8FB117AB1F8DB746FB8B3EB4C0DA3BF2A230D0((&L_233), L_231, L_232, /*hidden argument*/NULL);
-		float L_234 = (&V_0)->get_z_2();
+		float L_234 = (&V_0)->get_z_3();
 		float L_235 = (&V_14)->get_y_1();
 		Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  L_236;
 		memset(&L_236, 0, sizeof(L_236));
@@ -24352,7 +24352,7 @@ IL_06e6:
 		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_267 = VirtFuncInvoker0< Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  >::Invoke(22 /* UnityEngine.Color UnityEngine.UI.Graphic::get_color() */, __this);
 		Color32_t23ABC4AE0E0BDFD2E22EE1FA0DA3904FFE5F6E23  L_268 = Color32_op_Implicit_m52B034473369A651C8952BD916A2AB193E0E5B30(L_267, /*hidden argument*/NULL);
 		float L_269 = (&V_8)->get_x_0();
-		float L_270 = (&V_0)->get_y_1();
+		float L_270 = (&V_0)->get_y_2();
 		Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  L_271;
 		memset(&L_271, 0, sizeof(L_271));
 		Vector2__ctor_mEE8FB117AB1F8DB746FB8B3EB4C0DA3BF2A230D0((&L_271), L_269, L_270, /*hidden argument*/NULL);
@@ -24386,7 +24386,7 @@ IL_06e6:
 		memset(&L_290, 0, sizeof(L_290));
 		Vector2__ctor_mEE8FB117AB1F8DB746FB8B3EB4C0DA3BF2A230D0((&L_290), L_288, L_289, /*hidden argument*/NULL);
 		float L_291 = (&V_14)->get_x_0();
-		float L_292 = (&V_0)->get_w_3();
+		float L_292 = (&V_0)->get_w_4();
 		Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  L_293;
 		memset(&L_293, 0, sizeof(L_293));
 		Vector2__ctor_mEE8FB117AB1F8DB746FB8B3EB4C0DA3BF2A230D0((&L_293), L_291, L_292, /*hidden argument*/NULL);
@@ -24421,8 +24421,8 @@ IL_07b8:
 		Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  L_305 = Vector2_op_Addition_m81A4D928B8E399DA3A4E3ACD8937EDFDCB014682(L_303, L_304, /*hidden argument*/NULL);
 		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_306 = VirtFuncInvoker0< Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  >::Invoke(22 /* UnityEngine.Color UnityEngine.UI.Graphic::get_color() */, __this);
 		Color32_t23ABC4AE0E0BDFD2E22EE1FA0DA3904FFE5F6E23  L_307 = Color32_op_Implicit_m52B034473369A651C8952BD916A2AB193E0E5B30(L_306, /*hidden argument*/NULL);
-		float L_308 = (&V_0)->get_x_0();
-		float L_309 = (&V_0)->get_y_1();
+		float L_308 = (&V_0)->get_x_1();
+		float L_309 = (&V_0)->get_y_2();
 		Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  L_310;
 		memset(&L_310, 0, sizeof(L_310));
 		Vector2__ctor_mEE8FB117AB1F8DB746FB8B3EB4C0DA3BF2A230D0((&L_310), L_308, L_309, /*hidden argument*/NULL);
@@ -24450,11 +24450,11 @@ IL_07b8:
 		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_324 = VirtFuncInvoker0< Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  >::Invoke(22 /* UnityEngine.Color UnityEngine.UI.Graphic::get_color() */, __this);
 		Color32_t23ABC4AE0E0BDFD2E22EE1FA0DA3904FFE5F6E23  L_325 = Color32_op_Implicit_m52B034473369A651C8952BD916A2AB193E0E5B30(L_324, /*hidden argument*/NULL);
 		float L_326 = (&V_9)->get_x_0();
-		float L_327 = (&V_0)->get_y_1();
+		float L_327 = (&V_0)->get_y_2();
 		Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  L_328;
 		memset(&L_328, 0, sizeof(L_328));
 		Vector2__ctor_mEE8FB117AB1F8DB746FB8B3EB4C0DA3BF2A230D0((&L_328), L_326, L_327, /*hidden argument*/NULL);
-		float L_329 = (&V_0)->get_z_2();
+		float L_329 = (&V_0)->get_z_3();
 		float L_330 = (&V_8)->get_y_1();
 		Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  L_331;
 		memset(&L_331, 0, sizeof(L_331));
@@ -24476,13 +24476,13 @@ IL_07b8:
 		Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  L_341 = Vector2_op_Addition_m81A4D928B8E399DA3A4E3ACD8937EDFDCB014682(L_339, L_340, /*hidden argument*/NULL);
 		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_342 = VirtFuncInvoker0< Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  >::Invoke(22 /* UnityEngine.Color UnityEngine.UI.Graphic::get_color() */, __this);
 		Color32_t23ABC4AE0E0BDFD2E22EE1FA0DA3904FFE5F6E23  L_343 = Color32_op_Implicit_m52B034473369A651C8952BD916A2AB193E0E5B30(L_342, /*hidden argument*/NULL);
-		float L_344 = (&V_0)->get_x_0();
+		float L_344 = (&V_0)->get_x_1();
 		float L_345 = (&V_9)->get_y_1();
 		Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  L_346;
 		memset(&L_346, 0, sizeof(L_346));
 		Vector2__ctor_mEE8FB117AB1F8DB746FB8B3EB4C0DA3BF2A230D0((&L_346), L_344, L_345, /*hidden argument*/NULL);
 		float L_347 = (&V_8)->get_x_0();
-		float L_348 = (&V_0)->get_w_3();
+		float L_348 = (&V_0)->get_w_4();
 		Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  L_349;
 		memset(&L_349, 0, sizeof(L_349));
 		Vector2__ctor_mEE8FB117AB1F8DB746FB8B3EB4C0DA3BF2A230D0((&L_349), L_347, L_348, /*hidden argument*/NULL);
@@ -24509,8 +24509,8 @@ IL_07b8:
 		Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  L_365;
 		memset(&L_365, 0, sizeof(L_365));
 		Vector2__ctor_mEE8FB117AB1F8DB746FB8B3EB4C0DA3BF2A230D0((&L_365), L_363, L_364, /*hidden argument*/NULL);
-		float L_366 = (&V_0)->get_z_2();
-		float L_367 = (&V_0)->get_w_3();
+		float L_366 = (&V_0)->get_z_3();
+		float L_367 = (&V_0)->get_w_4();
 		Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  L_368;
 		memset(&L_368, 0, sizeof(L_368));
 		Vector2__ctor_mEE8FB117AB1F8DB746FB8B3EB4C0DA3BF2A230D0((&L_368), L_366, L_367, /*hidden argument*/NULL);
@@ -24962,13 +24962,13 @@ IL_004a:
 		Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  L_10 = VirtFuncInvoker0< Color_t119BCA590009762C7223FDD3AF9706653AC84ED2  >::Invoke(22 /* UnityEngine.Color UnityEngine.UI.Graphic::get_color() */, __this);
 		Color32_t23ABC4AE0E0BDFD2E22EE1FA0DA3904FFE5F6E23  L_11 = Color32_op_Implicit_m52B034473369A651C8952BD916A2AB193E0E5B30(L_10, /*hidden argument*/NULL);
 		(&V_2)->set_color_3(L_11);
-		float L_12 = (&V_1)->get_x_0();
+		float L_12 = (&V_1)->get_x_1();
 		V_3 = L_12;
-		float L_13 = (&V_1)->get_y_1();
+		float L_13 = (&V_1)->get_y_2();
 		V_4 = L_13;
-		float L_14 = (&V_1)->get_z_2();
+		float L_14 = (&V_1)->get_z_3();
 		V_5 = L_14;
-		float L_15 = (&V_1)->get_w_3();
+		float L_15 = (&V_1)->get_w_4();
 		V_6 = L_15;
 		int32_t L_16 = __this->get_m_FillMethod_36();
 		if (!L_16)
@@ -25004,11 +25004,11 @@ IL_009d:
 		}
 	}
 	{
-		float L_23 = (&V_0)->get_z_2();
-		float L_24 = (&V_0)->get_z_2();
-		float L_25 = (&V_0)->get_x_0();
+		float L_23 = (&V_0)->get_z_3();
+		float L_24 = (&V_0)->get_z_3();
+		float L_25 = (&V_0)->get_x_1();
 		float L_26 = __this->get_m_FillAmount_37();
-		(&V_0)->set_x_0(((float)il2cpp_codegen_subtract((float)L_23, (float)((float)il2cpp_codegen_multiply((float)((float)il2cpp_codegen_subtract((float)L_24, (float)L_25)), (float)L_26)))));
+		(&V_0)->set_x_1(((float)il2cpp_codegen_subtract((float)L_23, (float)((float)il2cpp_codegen_multiply((float)((float)il2cpp_codegen_subtract((float)L_24, (float)L_25)), (float)L_26)))));
 		float L_27 = V_5;
 		float L_28 = V_7;
 		V_3 = ((float)il2cpp_codegen_subtract((float)L_27, (float)L_28));
@@ -25017,11 +25017,11 @@ IL_009d:
 
 IL_00f5:
 	{
-		float L_29 = (&V_0)->get_x_0();
-		float L_30 = (&V_0)->get_z_2();
-		float L_31 = (&V_0)->get_x_0();
+		float L_29 = (&V_0)->get_x_1();
+		float L_30 = (&V_0)->get_z_3();
+		float L_31 = (&V_0)->get_x_1();
 		float L_32 = __this->get_m_FillAmount_37();
-		(&V_0)->set_z_2(((float)il2cpp_codegen_add((float)L_29, (float)((float)il2cpp_codegen_multiply((float)((float)il2cpp_codegen_subtract((float)L_30, (float)L_31)), (float)L_32)))));
+		(&V_0)->set_z_3(((float)il2cpp_codegen_add((float)L_29, (float)((float)il2cpp_codegen_multiply((float)((float)il2cpp_codegen_subtract((float)L_30, (float)L_31)), (float)L_32)))));
 		float L_33 = V_3;
 		float L_34 = V_7;
 		V_5 = ((float)il2cpp_codegen_add((float)L_33, (float)L_34));
@@ -25052,11 +25052,11 @@ IL_0128:
 		}
 	}
 	{
-		float L_40 = (&V_0)->get_w_3();
-		float L_41 = (&V_0)->get_w_3();
-		float L_42 = (&V_0)->get_y_1();
+		float L_40 = (&V_0)->get_w_4();
+		float L_41 = (&V_0)->get_w_4();
+		float L_42 = (&V_0)->get_y_2();
 		float L_43 = __this->get_m_FillAmount_37();
-		(&V_0)->set_y_1(((float)il2cpp_codegen_subtract((float)L_40, (float)((float)il2cpp_codegen_multiply((float)((float)il2cpp_codegen_subtract((float)L_41, (float)L_42)), (float)L_43)))));
+		(&V_0)->set_y_2(((float)il2cpp_codegen_subtract((float)L_40, (float)((float)il2cpp_codegen_multiply((float)((float)il2cpp_codegen_subtract((float)L_41, (float)L_42)), (float)L_43)))));
 		float L_44 = V_6;
 		float L_45 = V_8;
 		V_4 = ((float)il2cpp_codegen_subtract((float)L_44, (float)L_45));
@@ -25065,11 +25065,11 @@ IL_0128:
 
 IL_0182:
 	{
-		float L_46 = (&V_0)->get_y_1();
-		float L_47 = (&V_0)->get_w_3();
-		float L_48 = (&V_0)->get_y_1();
+		float L_46 = (&V_0)->get_y_2();
+		float L_47 = (&V_0)->get_w_4();
+		float L_48 = (&V_0)->get_y_2();
 		float L_49 = __this->get_m_FillAmount_37();
-		(&V_0)->set_w_3(((float)il2cpp_codegen_add((float)L_46, (float)((float)il2cpp_codegen_multiply((float)((float)il2cpp_codegen_subtract((float)L_47, (float)L_48)), (float)L_49)))));
+		(&V_0)->set_w_4(((float)il2cpp_codegen_add((float)L_46, (float)((float)il2cpp_codegen_multiply((float)((float)il2cpp_codegen_subtract((float)L_47, (float)L_48)), (float)L_49)))));
 		float L_50 = V_4;
 		float L_51 = V_8;
 		V_6 = ((float)il2cpp_codegen_add((float)L_50, (float)L_51));
@@ -25088,8 +25088,8 @@ IL_01b2:
 		IL2CPP_RUNTIME_CLASS_INIT(Image_t18FED07D8646917E1C563745518CF3DD57FF0B3E_il2cpp_TypeInfo_var);
 		Vector3U5BU5D_tB9EC3346CC4A0EA5447D968E84A9AC1F6F372C28* L_52 = ((Image_t18FED07D8646917E1C563745518CF3DD57FF0B3E_StaticFields*)il2cpp_codegen_static_fields_for(Image_t18FED07D8646917E1C563745518CF3DD57FF0B3E_il2cpp_TypeInfo_var))->get_s_Xy_45();
 		NullCheck(L_52);
-		float L_53 = (&V_0)->get_x_0();
-		float L_54 = (&V_0)->get_y_1();
+		float L_53 = (&V_0)->get_x_1();
+		float L_54 = (&V_0)->get_y_2();
 		Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  L_55;
 		memset(&L_55, 0, sizeof(L_55));
 		Vector2__ctor_mEE8FB117AB1F8DB746FB8B3EB4C0DA3BF2A230D0((&L_55), L_53, L_54, /*hidden argument*/NULL);
@@ -25098,8 +25098,8 @@ IL_01b2:
 		*(Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 *)((L_52)->GetAddressAt(static_cast<il2cpp_array_size_t>(0))) = L_56;
 		Vector3U5BU5D_tB9EC3346CC4A0EA5447D968E84A9AC1F6F372C28* L_57 = ((Image_t18FED07D8646917E1C563745518CF3DD57FF0B3E_StaticFields*)il2cpp_codegen_static_fields_for(Image_t18FED07D8646917E1C563745518CF3DD57FF0B3E_il2cpp_TypeInfo_var))->get_s_Xy_45();
 		NullCheck(L_57);
-		float L_58 = (&V_0)->get_x_0();
-		float L_59 = (&V_0)->get_w_3();
+		float L_58 = (&V_0)->get_x_1();
+		float L_59 = (&V_0)->get_w_4();
 		Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  L_60;
 		memset(&L_60, 0, sizeof(L_60));
 		Vector2__ctor_mEE8FB117AB1F8DB746FB8B3EB4C0DA3BF2A230D0((&L_60), L_58, L_59, /*hidden argument*/NULL);
@@ -25107,8 +25107,8 @@ IL_01b2:
 		*(Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 *)((L_57)->GetAddressAt(static_cast<il2cpp_array_size_t>(1))) = L_61;
 		Vector3U5BU5D_tB9EC3346CC4A0EA5447D968E84A9AC1F6F372C28* L_62 = ((Image_t18FED07D8646917E1C563745518CF3DD57FF0B3E_StaticFields*)il2cpp_codegen_static_fields_for(Image_t18FED07D8646917E1C563745518CF3DD57FF0B3E_il2cpp_TypeInfo_var))->get_s_Xy_45();
 		NullCheck(L_62);
-		float L_63 = (&V_0)->get_z_2();
-		float L_64 = (&V_0)->get_w_3();
+		float L_63 = (&V_0)->get_z_3();
+		float L_64 = (&V_0)->get_w_4();
 		Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  L_65;
 		memset(&L_65, 0, sizeof(L_65));
 		Vector2__ctor_mEE8FB117AB1F8DB746FB8B3EB4C0DA3BF2A230D0((&L_65), L_63, L_64, /*hidden argument*/NULL);
@@ -25116,8 +25116,8 @@ IL_01b2:
 		*(Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720 *)((L_62)->GetAddressAt(static_cast<il2cpp_array_size_t>(2))) = L_66;
 		Vector3U5BU5D_tB9EC3346CC4A0EA5447D968E84A9AC1F6F372C28* L_67 = ((Image_t18FED07D8646917E1C563745518CF3DD57FF0B3E_StaticFields*)il2cpp_codegen_static_fields_for(Image_t18FED07D8646917E1C563745518CF3DD57FF0B3E_il2cpp_TypeInfo_var))->get_s_Xy_45();
 		NullCheck(L_67);
-		float L_68 = (&V_0)->get_z_2();
-		float L_69 = (&V_0)->get_y_1();
+		float L_68 = (&V_0)->get_z_3();
+		float L_69 = (&V_0)->get_y_2();
 		Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  L_70;
 		memset(&L_70, 0, sizeof(L_70));
 		Vector2__ctor_mEE8FB117AB1F8DB746FB8B3EB4C0DA3BF2A230D0((&L_70), L_68, L_69, /*hidden argument*/NULL);
@@ -25322,8 +25322,8 @@ IL_0408:
 		IL2CPP_RUNTIME_CLASS_INIT(Image_t18FED07D8646917E1C563745518CF3DD57FF0B3E_il2cpp_TypeInfo_var);
 		Vector3U5BU5D_tB9EC3346CC4A0EA5447D968E84A9AC1F6F372C28* L_115 = ((Image_t18FED07D8646917E1C563745518CF3DD57FF0B3E_StaticFields*)il2cpp_codegen_static_fields_for(Image_t18FED07D8646917E1C563745518CF3DD57FF0B3E_il2cpp_TypeInfo_var))->get_s_Xy_45();
 		NullCheck(L_115);
-		float L_116 = (&V_0)->get_x_0();
-		float L_117 = (&V_0)->get_z_2();
+		float L_116 = (&V_0)->get_x_1();
+		float L_117 = (&V_0)->get_z_3();
 		float L_118 = V_10;
 		IL2CPP_RUNTIME_CLASS_INIT(Mathf_tFBDE6467D269BFE410605C7D806FD9991D4A89CB_il2cpp_TypeInfo_var);
 		float L_119 = Mathf_Lerp_m9A74C5A0C37D0CDF45EE66E7774D12A9B93B1364(L_116, L_117, L_118, /*hidden argument*/NULL);
@@ -25336,8 +25336,8 @@ IL_0408:
 		((L_120)->GetAddressAt(static_cast<il2cpp_array_size_t>(1)))->set_x_2(L_122);
 		Vector3U5BU5D_tB9EC3346CC4A0EA5447D968E84A9AC1F6F372C28* L_123 = ((Image_t18FED07D8646917E1C563745518CF3DD57FF0B3E_StaticFields*)il2cpp_codegen_static_fields_for(Image_t18FED07D8646917E1C563745518CF3DD57FF0B3E_il2cpp_TypeInfo_var))->get_s_Xy_45();
 		NullCheck(L_123);
-		float L_124 = (&V_0)->get_x_0();
-		float L_125 = (&V_0)->get_z_2();
+		float L_124 = (&V_0)->get_x_1();
+		float L_125 = (&V_0)->get_z_3();
 		float L_126 = V_11;
 		float L_127 = Mathf_Lerp_m9A74C5A0C37D0CDF45EE66E7774D12A9B93B1364(L_124, L_125, L_126, /*hidden argument*/NULL);
 		((L_123)->GetAddressAt(static_cast<il2cpp_array_size_t>(2)))->set_x_2(L_127);
@@ -25349,15 +25349,15 @@ IL_0408:
 		((L_128)->GetAddressAt(static_cast<il2cpp_array_size_t>(3)))->set_x_2(L_130);
 		Vector3U5BU5D_tB9EC3346CC4A0EA5447D968E84A9AC1F6F372C28* L_131 = ((Image_t18FED07D8646917E1C563745518CF3DD57FF0B3E_StaticFields*)il2cpp_codegen_static_fields_for(Image_t18FED07D8646917E1C563745518CF3DD57FF0B3E_il2cpp_TypeInfo_var))->get_s_Xy_45();
 		NullCheck(L_131);
-		float L_132 = (&V_0)->get_y_1();
-		float L_133 = (&V_0)->get_w_3();
+		float L_132 = (&V_0)->get_y_2();
+		float L_133 = (&V_0)->get_w_4();
 		float L_134 = V_12;
 		float L_135 = Mathf_Lerp_m9A74C5A0C37D0CDF45EE66E7774D12A9B93B1364(L_132, L_133, L_134, /*hidden argument*/NULL);
 		((L_131)->GetAddressAt(static_cast<il2cpp_array_size_t>(0)))->set_y_3(L_135);
 		Vector3U5BU5D_tB9EC3346CC4A0EA5447D968E84A9AC1F6F372C28* L_136 = ((Image_t18FED07D8646917E1C563745518CF3DD57FF0B3E_StaticFields*)il2cpp_codegen_static_fields_for(Image_t18FED07D8646917E1C563745518CF3DD57FF0B3E_il2cpp_TypeInfo_var))->get_s_Xy_45();
 		NullCheck(L_136);
-		float L_137 = (&V_0)->get_y_1();
-		float L_138 = (&V_0)->get_w_3();
+		float L_137 = (&V_0)->get_y_2();
+		float L_138 = (&V_0)->get_w_4();
 		float L_139 = V_13;
 		float L_140 = Mathf_Lerp_m9A74C5A0C37D0CDF45EE66E7774D12A9B93B1364(L_137, L_138, L_139, /*hidden argument*/NULL);
 		((L_136)->GetAddressAt(static_cast<il2cpp_array_size_t>(1)))->set_y_3(L_140);
@@ -25558,8 +25558,8 @@ IL_0711:
 		IL2CPP_RUNTIME_CLASS_INIT(Image_t18FED07D8646917E1C563745518CF3DD57FF0B3E_il2cpp_TypeInfo_var);
 		Vector3U5BU5D_tB9EC3346CC4A0EA5447D968E84A9AC1F6F372C28* L_203 = ((Image_t18FED07D8646917E1C563745518CF3DD57FF0B3E_StaticFields*)il2cpp_codegen_static_fields_for(Image_t18FED07D8646917E1C563745518CF3DD57FF0B3E_il2cpp_TypeInfo_var))->get_s_Xy_45();
 		NullCheck(L_203);
-		float L_204 = (&V_0)->get_x_0();
-		float L_205 = (&V_0)->get_z_2();
+		float L_204 = (&V_0)->get_x_1();
+		float L_205 = (&V_0)->get_z_3();
 		float L_206 = V_17;
 		IL2CPP_RUNTIME_CLASS_INIT(Mathf_tFBDE6467D269BFE410605C7D806FD9991D4A89CB_il2cpp_TypeInfo_var);
 		float L_207 = Mathf_Lerp_m9A74C5A0C37D0CDF45EE66E7774D12A9B93B1364(L_204, L_205, L_206, /*hidden argument*/NULL);
@@ -25572,8 +25572,8 @@ IL_0711:
 		((L_208)->GetAddressAt(static_cast<il2cpp_array_size_t>(1)))->set_x_2(L_210);
 		Vector3U5BU5D_tB9EC3346CC4A0EA5447D968E84A9AC1F6F372C28* L_211 = ((Image_t18FED07D8646917E1C563745518CF3DD57FF0B3E_StaticFields*)il2cpp_codegen_static_fields_for(Image_t18FED07D8646917E1C563745518CF3DD57FF0B3E_il2cpp_TypeInfo_var))->get_s_Xy_45();
 		NullCheck(L_211);
-		float L_212 = (&V_0)->get_x_0();
-		float L_213 = (&V_0)->get_z_2();
+		float L_212 = (&V_0)->get_x_1();
+		float L_213 = (&V_0)->get_z_3();
 		float L_214 = V_18;
 		float L_215 = Mathf_Lerp_m9A74C5A0C37D0CDF45EE66E7774D12A9B93B1364(L_212, L_213, L_214, /*hidden argument*/NULL);
 		((L_211)->GetAddressAt(static_cast<il2cpp_array_size_t>(2)))->set_x_2(L_215);
@@ -25585,15 +25585,15 @@ IL_0711:
 		((L_216)->GetAddressAt(static_cast<il2cpp_array_size_t>(3)))->set_x_2(L_218);
 		Vector3U5BU5D_tB9EC3346CC4A0EA5447D968E84A9AC1F6F372C28* L_219 = ((Image_t18FED07D8646917E1C563745518CF3DD57FF0B3E_StaticFields*)il2cpp_codegen_static_fields_for(Image_t18FED07D8646917E1C563745518CF3DD57FF0B3E_il2cpp_TypeInfo_var))->get_s_Xy_45();
 		NullCheck(L_219);
-		float L_220 = (&V_0)->get_y_1();
-		float L_221 = (&V_0)->get_w_3();
+		float L_220 = (&V_0)->get_y_2();
+		float L_221 = (&V_0)->get_w_4();
 		float L_222 = V_19;
 		float L_223 = Mathf_Lerp_m9A74C5A0C37D0CDF45EE66E7774D12A9B93B1364(L_220, L_221, L_222, /*hidden argument*/NULL);
 		((L_219)->GetAddressAt(static_cast<il2cpp_array_size_t>(0)))->set_y_3(L_223);
 		Vector3U5BU5D_tB9EC3346CC4A0EA5447D968E84A9AC1F6F372C28* L_224 = ((Image_t18FED07D8646917E1C563745518CF3DD57FF0B3E_StaticFields*)il2cpp_codegen_static_fields_for(Image_t18FED07D8646917E1C563745518CF3DD57FF0B3E_il2cpp_TypeInfo_var))->get_s_Xy_45();
 		NullCheck(L_224);
-		float L_225 = (&V_0)->get_y_1();
-		float L_226 = (&V_0)->get_w_3();
+		float L_225 = (&V_0)->get_y_2();
+		float L_226 = (&V_0)->get_w_4();
 		float L_227 = V_20;
 		float L_228 = Mathf_Lerp_m9A74C5A0C37D0CDF45EE66E7774D12A9B93B1364(L_225, L_226, L_227, /*hidden argument*/NULL);
 		((L_224)->GetAddressAt(static_cast<il2cpp_array_size_t>(1)))->set_y_3(L_228);

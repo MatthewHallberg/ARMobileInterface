@@ -13410,6 +13410,8 @@ extern "C" IL2CPP_METHOD_ATTR String_t* Single_ToString_m2B1556CFBBD088D285A0B0E
 extern "C" IL2CPP_METHOD_ATTR NumberFormatInfo_tFDF57037EBC5BC833D0A53EF0327B805994860A8 * NumberFormatInfo_GetInstance_m713D298B436F3765F059FEA6C446F0A6ABF0A89A (RuntimeObject* ___formatProvider0, const RuntimeMethod* method);
 // System.String System.Single::ToString(System.IFormatProvider)
 extern "C" IL2CPP_METHOD_ATTR String_t* Single_ToString_m578EAE7D490B9ACEF7116E4E824DC2F1E8F25A2F (float* __this, RuntimeObject* ___provider0, const RuntimeMethod* method);
+// System.String System.Single::ToString(System.String)
+extern "C" IL2CPP_METHOD_ATTR String_t* Single_ToString_m211B5E14B0C60667C56838D5C3788CFA58670DDE (float* __this, String_t* ___format0, const RuntimeMethod* method);
 // System.String System.Single::ToString(System.String,System.IFormatProvider)
 extern "C" IL2CPP_METHOD_ATTR String_t* Single_ToString_mCF682C2751EC9B98F1CE5455066B92D7D3356756 (float* __this, String_t* ___format0, RuntimeObject* ___provider1, const RuntimeMethod* method);
 // System.Single System.Single::Parse(System.String,System.Globalization.NumberStyles,System.Globalization.NumberFormatInfo)
@@ -31345,6 +31347,22 @@ extern "C"  String_t* Single_ToString_m578EAE7D490B9ACEF7116E4E824DC2F1E8F25A2F_
 {
 	float* _thisAdjusted = reinterpret_cast<float*>(__this + 1);
 	return Single_ToString_m578EAE7D490B9ACEF7116E4E824DC2F1E8F25A2F(_thisAdjusted, ___provider0, method);
+}
+// System.String System.Single::ToString(System.String)
+extern "C" IL2CPP_METHOD_ATTR String_t* Single_ToString_m211B5E14B0C60667C56838D5C3788CFA58670DDE (float* __this, String_t* ___format0, const RuntimeMethod* method)
+{
+	{
+		float L_0 = *((float*)__this);
+		String_t* L_1 = ___format0;
+		NumberFormatInfo_tFDF57037EBC5BC833D0A53EF0327B805994860A8 * L_2 = NumberFormatInfo_get_CurrentInfo_m595DF03E32E0C5B01F1EC45F7264B2BD09BA61C9(/*hidden argument*/NULL);
+		String_t* L_3 = Number_FormatSingle_m323E2B56236A6DAA51251B75618122C0A58F5256(L_0, L_1, L_2, /*hidden argument*/NULL);
+		return L_3;
+	}
+}
+extern "C"  String_t* Single_ToString_m211B5E14B0C60667C56838D5C3788CFA58670DDE_AdjustorThunk (RuntimeObject * __this, String_t* ___format0, const RuntimeMethod* method)
+{
+	float* _thisAdjusted = reinterpret_cast<float*>(__this + 1);
+	return Single_ToString_m211B5E14B0C60667C56838D5C3788CFA58670DDE(_thisAdjusted, ___format0, method);
 }
 // System.String System.Single::ToString(System.String,System.IFormatProvider)
 extern "C" IL2CPP_METHOD_ATTR String_t* Single_ToString_mCF682C2751EC9B98F1CE5455066B92D7D3356756 (float* __this, String_t* ___format0, RuntimeObject* ___provider1, const RuntimeMethod* method)

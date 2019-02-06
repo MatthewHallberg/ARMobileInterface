@@ -373,6 +373,8 @@ struct Renderer_t0556D67DD582620D1F495627EDE30D03284151F4;
 struct TextAsset_tEE9F5A28C3B564D6BA849C45C13192B9E0EF8D4E;
 // UnityEngine.TextGenerator
 struct TextGenerator_tD455BE18A64C7DDF854F6DB3CCEBF705121C58A8;
+// UnityEngine.TextMesh
+struct TextMesh_t327D0DAFEF431170D8C2882083D442AF4D4A0E4A;
 // UnityEngine.Texture
 struct Texture_t387FE83BB848001FD06B14707AEA6D5A0F6A95F4;
 // UnityEngine.Texture2D
@@ -449,6 +451,8 @@ struct YouTubeAPI_t77BD34FB90DF0001C2B731FB6F07502995C16897;
 struct U3CU3Ec_tBC09F3698A728D2527404129B64CD4BD6EAD73CF;
 // YouTubeAPI/<GetYouTubeLinkRoutine>d__5
 struct U3CGetYouTubeLinkRoutineU3Ed__5_t9813147061324262BA459D775E1DE964C601EC11;
+// fps
+struct fps_t1EBD7C643A92A614792189871C4754CE3AB0DE3A;
 
 extern RuntimeClass* Action_1_tAA0F894C98302D68F7D5034E8104E9AB4763CCAD_il2cpp_TypeInfo_var;
 extern RuntimeClass* Action_t591D2A86165F896B4B800BB5C25CE18672A55579_il2cpp_TypeInfo_var;
@@ -518,10 +522,12 @@ extern String_t* _stringLiteral6DD6DE16B26EFE9BAA557A33AD2A1519FD65358E;
 extern String_t* _stringLiteral72DCBF166A2B16477455AEF51AC11D95ACE12A39;
 extern String_t* _stringLiteral8DE8845813D56D317914565CB350AA59ABA7DD31;
 extern String_t* _stringLiteral928D2B35E90A67FBBF9F74671185EE7E0E5DE70C;
+extern String_t* _stringLiteral96B6D46DCDE338BFDECDD98FE3B16EF61D352CFC;
 extern String_t* _stringLiteralA110E6B9A361653A042E3F5DFBAC4C6105693789;
 extern String_t* _stringLiteralA23170942F0D6B0BF00E9333DB113B77193F2D8D;
 extern String_t* _stringLiteralAB2B79293A451C5B9D49BD5E3743B334F92D41F7;
 extern String_t* _stringLiteralB5F9F8237C3F925D9439471C556B0B23D469BC83;
+extern String_t* _stringLiteralB6589FC6AB0DC82CF12099D1C2D40AB994E8410C;
 extern String_t* _stringLiteralBED085B91B8E7EA822B98FBA576E41E25774A72D;
 extern String_t* _stringLiteralBFEA50DA73AB5A0F90B3BD5521582B3BAA4878CA;
 extern String_t* _stringLiteralC1C6588CC1E2AFAC6019E017B074A7EF4A23E3D6;
@@ -543,6 +549,7 @@ extern const RuntimeMethod* CameraFeedBehavior_OnTrackablesUpdated_mA3ED6C24A9FF
 extern const RuntimeMethod* CameraFeedBehavior_OnVuforiaStarted_m7515039B52C06E91B87B73EC16CA78EE5C3380D3_RuntimeMethod_var;
 extern const RuntimeMethod* Component_GetComponent_TisClassification_t49F9DB892C2C8405757B7B891DCC6BF9F7E47661_m903935B4F1FC2EDDF95C201A9E4F3607E4240AAD_RuntimeMethod_var;
 extern const RuntimeMethod* Component_GetComponent_TisRenderer_t0556D67DD582620D1F495627EDE30D03284151F4_mF9F4E733929B229379E5F52EDC80CA89076946D8_RuntimeMethod_var;
+extern const RuntimeMethod* Component_GetComponent_TisTextMesh_t327D0DAFEF431170D8C2882083D442AF4D4A0E4A_m23492DDBF5DBFA92E05E6DA9A216C9F83EB260A3_RuntimeMethod_var;
 extern const RuntimeMethod* Component_GetComponent_TisVideoPlayer_tFC1C27AF83D59A5213B2AC561B43FD7E19FE02F2_m8BD724EFE5F13D9F3164EA576D0914D714758959_RuntimeMethod_var;
 extern const RuntimeMethod* Component_GetComponent_TisWebsiteAPI_t6EFC0C03EAD2EFCFCED3103EED7A38D3C5BC7F88_m308F6256CD49D27C5CB79573C3C664C75C4DE61D_RuntimeMethod_var;
 extern const RuntimeMethod* Component_GetComponent_TisYouTubeAPI_t77BD34FB90DF0001C2B731FB6F07502995C16897_m0B6658D8FCB54D0412799151991216EA4BE0B10A_RuntimeMethod_var;
@@ -638,6 +645,8 @@ extern const uint32_t VuforiaSettings_Start_m618FA6573759668F85C9E883C3A06C717FA
 extern const uint32_t WebsiteAPI_GetImageFromURL_mB3566FF7E9235A72116DC25ADE7A67E0D7022209_MetadataUsageId;
 extern const uint32_t YouTubeAPI_GetYouTubeLinkRoutine_mFE937D625BAEA209C1061A2CA048A8385B0BDA18_MetadataUsageId;
 extern const uint32_t YouTubeAPI_Start_m3303B9FF9FEAC15216CE25CD83D41CB33DD8DDC9_MetadataUsageId;
+extern const uint32_t fps_Start_m065762A4BDD5F9B9B7570A14566D194DF625FC13_MetadataUsageId;
+extern const uint32_t fps_Update_m97F672CB0BFF6ABB4448A190238C1771F76EFFF9_MetadataUsageId;
 struct CertificateHandler_tBD070BF4150A44AB482FD36EA3882C363117E8C0_marshaled_com;
 struct DownloadHandler_t4A7802ADC97024B469C87FA454B6973951980EE9_marshaled_com;
 struct Exception_t_marshaled_com;
@@ -4117,6 +4126,35 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // CAMERADIRECTION_T99A7DDFDD0655039A53CB7B65650BF9C584F427C_H
+#ifndef FOCUSMODE_T649DA432637F3552AFF51C0E9D5F7BFB478CA84E_H
+#define FOCUSMODE_T649DA432637F3552AFF51C0E9D5F7BFB478CA84E_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// Vuforia.CameraDevice/FocusMode
+struct  FocusMode_t649DA432637F3552AFF51C0E9D5F7BFB478CA84E 
+{
+public:
+	// System.Int32 Vuforia.CameraDevice/FocusMode::value__
+	int32_t ___value___2;
+
+public:
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(FocusMode_t649DA432637F3552AFF51C0E9D5F7BFB478CA84E, ___value___2)); }
+	inline int32_t get_value___2() const { return ___value___2; }
+	inline int32_t* get_address_of_value___2() { return &___value___2; }
+	inline void set_value___2(int32_t value)
+	{
+		___value___2 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // FOCUSMODE_T649DA432637F3552AFF51C0E9D5F7BFB478CA84E_H
 #ifndef STEREOFRAMEWORK_T95A56F9A03F0EBAFFC34ABBE8309C936859E13BA_H
 #define STEREOFRAMEWORK_T95A56F9A03F0EBAFFC34ABBE8309C936859E13BA_H
 #ifdef __clang__
@@ -6535,6 +6573,26 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // RENDERER_T0556D67DD582620D1F495627EDE30D03284151F4_H
+#ifndef TEXTMESH_T327D0DAFEF431170D8C2882083D442AF4D4A0E4A_H
+#define TEXTMESH_T327D0DAFEF431170D8C2882083D442AF4D4A0E4A_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// UnityEngine.TextMesh
+struct  TextMesh_t327D0DAFEF431170D8C2882083D442AF4D4A0E4A  : public Component_t05064EF382ABCAF4B8C94F8A350EA85184C26621
+{
+public:
+
+public:
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // TEXTMESH_T327D0DAFEF431170D8C2882083D442AF4D4A0E4A_H
 #ifndef TEXTURE2D_TBBF96AC337723E2EF156DF17E09D4379FD05DE1C_H
 #define TEXTURE2D_TBBF96AC337723E2EF156DF17E09D4379FD05DE1C_H
 #ifdef __clang__
@@ -7681,6 +7739,76 @@ public:
 #pragma clang diagnostic pop
 #endif
 #endif // YOUTUBEAPI_T77BD34FB90DF0001C2B731FB6F07502995C16897_H
+#ifndef FPS_T1EBD7C643A92A614792189871C4754CE3AB0DE3A_H
+#define FPS_T1EBD7C643A92A614792189871C4754CE3AB0DE3A_H
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+
+// fps
+struct  fps_t1EBD7C643A92A614792189871C4754CE3AB0DE3A  : public MonoBehaviour_t4A60845CF505405AF8BE8C61CC07F75CADEF6429
+{
+public:
+	// UnityEngine.TextMesh fps::text
+	TextMesh_t327D0DAFEF431170D8C2882083D442AF4D4A0E4A * ___text_4;
+	// System.Single fps::updateInterval
+	float ___updateInterval_5;
+	// System.Single fps::accum
+	float ___accum_6;
+	// System.Int32 fps::frames
+	int32_t ___frames_7;
+	// System.Single fps::timeleft
+	float ___timeleft_8;
+
+public:
+	inline static int32_t get_offset_of_text_4() { return static_cast<int32_t>(offsetof(fps_t1EBD7C643A92A614792189871C4754CE3AB0DE3A, ___text_4)); }
+	inline TextMesh_t327D0DAFEF431170D8C2882083D442AF4D4A0E4A * get_text_4() const { return ___text_4; }
+	inline TextMesh_t327D0DAFEF431170D8C2882083D442AF4D4A0E4A ** get_address_of_text_4() { return &___text_4; }
+	inline void set_text_4(TextMesh_t327D0DAFEF431170D8C2882083D442AF4D4A0E4A * value)
+	{
+		___text_4 = value;
+		Il2CppCodeGenWriteBarrier((&___text_4), value);
+	}
+
+	inline static int32_t get_offset_of_updateInterval_5() { return static_cast<int32_t>(offsetof(fps_t1EBD7C643A92A614792189871C4754CE3AB0DE3A, ___updateInterval_5)); }
+	inline float get_updateInterval_5() const { return ___updateInterval_5; }
+	inline float* get_address_of_updateInterval_5() { return &___updateInterval_5; }
+	inline void set_updateInterval_5(float value)
+	{
+		___updateInterval_5 = value;
+	}
+
+	inline static int32_t get_offset_of_accum_6() { return static_cast<int32_t>(offsetof(fps_t1EBD7C643A92A614792189871C4754CE3AB0DE3A, ___accum_6)); }
+	inline float get_accum_6() const { return ___accum_6; }
+	inline float* get_address_of_accum_6() { return &___accum_6; }
+	inline void set_accum_6(float value)
+	{
+		___accum_6 = value;
+	}
+
+	inline static int32_t get_offset_of_frames_7() { return static_cast<int32_t>(offsetof(fps_t1EBD7C643A92A614792189871C4754CE3AB0DE3A, ___frames_7)); }
+	inline int32_t get_frames_7() const { return ___frames_7; }
+	inline int32_t* get_address_of_frames_7() { return &___frames_7; }
+	inline void set_frames_7(int32_t value)
+	{
+		___frames_7 = value;
+	}
+
+	inline static int32_t get_offset_of_timeleft_8() { return static_cast<int32_t>(offsetof(fps_t1EBD7C643A92A614792189871C4754CE3AB0DE3A, ___timeleft_8)); }
+	inline float get_timeleft_8() const { return ___timeleft_8; }
+	inline float* get_address_of_timeleft_8() { return &___timeleft_8; }
+	inline void set_timeleft_8(float value)
+	{
+		___timeleft_8 = value;
+	}
+};
+
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#endif // FPS_T1EBD7C643A92A614792189871C4754CE3AB0DE3A_H
 #ifndef DISPLAYBEHAVIOR_TBC2064E1BF9EC76DC3CD355D1EF9B5355FFE65EF_H
 #define DISPLAYBEHAVIOR_TBC2064E1BF9EC76DC3CD355D1EF9B5355FFE65EF_H
 #ifdef __clang__
@@ -8968,6 +9096,8 @@ extern "C" IL2CPP_METHOD_ATTR void VuforiaARController_UnregisterVuforiaStartedC
 extern "C" IL2CPP_METHOD_ATTR RuntimeObject* VuforiaSettings_DelaySetupRoutine_mCB2A50D0DAC82CF66123DAD0D18B7ED295F23592 (VuforiaSettings_t659607A555136BCAFCBBD550710B74B8704C047C * __this, const RuntimeMethod* method);
 // System.Void VuforiaSettings/<DelaySetupRoutine>d__3::.ctor(System.Int32)
 extern "C" IL2CPP_METHOD_ATTR void U3CDelaySetupRoutineU3Ed__3__ctor_m46AB7768462FAA58667EE77A5720D8B161E3DD3B (U3CDelaySetupRoutineU3Ed__3_tC6689361693EFAEAE05D5C215F789EAE750CA969 * __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method);
+// System.Boolean Vuforia.CameraDevice::SetFocusMode(Vuforia.CameraDevice/FocusMode)
+extern "C" IL2CPP_METHOD_ATTR bool CameraDevice_SetFocusMode_m34A2BBE1DF0908E996C9A38C03DA190208ED349D (CameraDevice_tC7DA626A5FCE15B0C92C7FBD4E289F4F73B4BF3B * __this, int32_t p0, const RuntimeMethod* method);
 // Vuforia.MixedRealityController Vuforia.MixedRealityController::get_Instance()
 extern "C" IL2CPP_METHOD_ATTR MixedRealityController_t140A79CE6381E61D93A6C265DCC7A50522A901BE * MixedRealityController_get_Instance_m248BC55FA8BABF362E3C985D8BB400FD7D1DD0C7 (const RuntimeMethod* method);
 // System.Boolean Vuforia.MixedRealityController::SetMode(Vuforia.MixedRealityController/Mode)
@@ -9021,6 +9151,17 @@ extern "C" IL2CPP_METHOD_ATTR void VideoPlayer_set_url_m076BC425E754574E8DFCDFA7
 extern "C" IL2CPP_METHOD_ATTR void VideoPlayer_Prepare_m32AB43745A92A6762D570E60975AD69DB8FFF566 (VideoPlayer_tFC1C27AF83D59A5213B2AC561B43FD7E19FE02F2 * __this, const RuntimeMethod* method);
 // System.Void UnityEngine.Video.VideoPlayer::Play()
 extern "C" IL2CPP_METHOD_ATTR void VideoPlayer_Play_m2BCD775F42A36AC291C7B32D9E4D934EF0B91257 (VideoPlayer_tFC1C27AF83D59A5213B2AC561B43FD7E19FE02F2 * __this, const RuntimeMethod* method);
+// !!0 UnityEngine.Component::GetComponent<UnityEngine.TextMesh>()
+inline TextMesh_t327D0DAFEF431170D8C2882083D442AF4D4A0E4A * Component_GetComponent_TisTextMesh_t327D0DAFEF431170D8C2882083D442AF4D4A0E4A_m23492DDBF5DBFA92E05E6DA9A216C9F83EB260A3 (Component_t05064EF382ABCAF4B8C94F8A350EA85184C26621 * __this, const RuntimeMethod* method)
+{
+	return ((  TextMesh_t327D0DAFEF431170D8C2882083D442AF4D4A0E4A * (*) (Component_t05064EF382ABCAF4B8C94F8A350EA85184C26621 *, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m3FED1FF44F93EF1C3A07526800331B638EF4105B_gshared)(__this, method);
+}
+// System.Single UnityEngine.Time::get_timeScale()
+extern "C" IL2CPP_METHOD_ATTR float Time_get_timeScale_m7E198A5814859A08FD0FFE6DD5F7ED5C907719F8 (const RuntimeMethod* method);
+// System.String System.Single::ToString(System.String)
+extern "C" IL2CPP_METHOD_ATTR String_t* Single_ToString_m211B5E14B0C60667C56838D5C3788CFA58670DDE (float* __this, String_t* p0, const RuntimeMethod* method);
+// System.Void UnityEngine.TextMesh::set_text(System.String)
+extern "C" IL2CPP_METHOD_ATTR void TextMesh_set_text_m64242AB987CF285F432E7AED38F24FF855E9B220 (TextMesh_t327D0DAFEF431170D8C2882083D442AF4D4A0E4A * __this, String_t* p0, const RuntimeMethod* method);
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -13372,7 +13513,7 @@ IL_0012:
 
 IL_0014:
 	{
-		goto IL_0039;
+		goto IL_0045;
 	}
 
 IL_0016:
@@ -13383,15 +13524,20 @@ IL_0016:
 IL_0018:
 	{
 		__this->set_U3CU3E1__state_0((-1));
+		// CameraDevice.Instance.SetFocusMode(CameraDevice.FocusMode.FOCUS_MODE_CONTINUOUSAUTO);
+		IL2CPP_RUNTIME_CLASS_INIT(CameraDevice_tC7DA626A5FCE15B0C92C7FBD4E289F4F73B4BF3B_il2cpp_TypeInfo_var);
+		CameraDevice_tC7DA626A5FCE15B0C92C7FBD4E289F4F73B4BF3B * L_3 = CameraDevice_get_Instance_m0B0568E489617394A6BCA95F4AAE7D884912C330(/*hidden argument*/NULL);
+		NullCheck(L_3);
+		CameraDevice_SetFocusMode_m34A2BBE1DF0908E996C9A38C03DA190208ED349D(L_3, 2, /*hidden argument*/NULL);
 		// yield return new WaitForSeconds(.5f);
-		WaitForSeconds_t3E9E78D3BB53F03F96C7F28BA9B9086CD1A5F4E8 * L_3 = (WaitForSeconds_t3E9E78D3BB53F03F96C7F28BA9B9086CD1A5F4E8 *)il2cpp_codegen_object_new(WaitForSeconds_t3E9E78D3BB53F03F96C7F28BA9B9086CD1A5F4E8_il2cpp_TypeInfo_var);
-		WaitForSeconds__ctor_m8E4BA3E27AEFFE5B74A815F26FF8AAB99743F559(L_3, (0.5f), /*hidden argument*/NULL);
-		__this->set_U3CU3E2__current_1(L_3);
+		WaitForSeconds_t3E9E78D3BB53F03F96C7F28BA9B9086CD1A5F4E8 * L_4 = (WaitForSeconds_t3E9E78D3BB53F03F96C7F28BA9B9086CD1A5F4E8 *)il2cpp_codegen_object_new(WaitForSeconds_t3E9E78D3BB53F03F96C7F28BA9B9086CD1A5F4E8_il2cpp_TypeInfo_var);
+		WaitForSeconds__ctor_m8E4BA3E27AEFFE5B74A815F26FF8AAB99743F559(L_4, (0.5f), /*hidden argument*/NULL);
+		__this->set_U3CU3E2__current_1(L_4);
 		__this->set_U3CU3E1__state_0(1);
 		return (bool)1;
 	}
 
-IL_0039:
+IL_0045:
 	{
 		__this->set_U3CU3E1__state_0((-1));
 		// Debug.Log("SETTING Viewer AR mode");
@@ -13399,9 +13545,9 @@ IL_0039:
 		Debug_Log_m4B7C70BAFD477C6BDB59C88A0934F0B018D03708(_stringLiteral467E09595712EBBF4948285A2996E57B12481C0A, /*hidden argument*/NULL);
 		// MixedRealityController.Instance.SetMode(MixedRealityController.Mode.VIEWER_AR);
 		IL2CPP_RUNTIME_CLASS_INIT(MixedRealityController_t140A79CE6381E61D93A6C265DCC7A50522A901BE_il2cpp_TypeInfo_var);
-		MixedRealityController_t140A79CE6381E61D93A6C265DCC7A50522A901BE * L_4 = MixedRealityController_get_Instance_m248BC55FA8BABF362E3C985D8BB400FD7D1DD0C7(/*hidden argument*/NULL);
-		NullCheck(L_4);
-		MixedRealityController_SetMode_mB2605D249B4EADB2926C0BEEC03CE0EC9CB3DACA(L_4, 4, /*hidden argument*/NULL);
+		MixedRealityController_t140A79CE6381E61D93A6C265DCC7A50522A901BE * L_5 = MixedRealityController_get_Instance_m248BC55FA8BABF362E3C985D8BB400FD7D1DD0C7(/*hidden argument*/NULL);
+		NullCheck(L_5);
+		MixedRealityController_SetMode_mB2605D249B4EADB2926C0BEEC03CE0EC9CB3DACA(L_5, 4, /*hidden argument*/NULL);
 		// }
 		return (bool)0;
 	}
@@ -14077,6 +14223,107 @@ extern "C" IL2CPP_METHOD_ATTR RuntimeObject * U3CGetYouTubeLinkRoutineU3Ed__5_Sy
 	{
 		RuntimeObject * L_0 = __this->get_U3CU3E2__current_1();
 		return L_0;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void fps::Start()
+extern "C" IL2CPP_METHOD_ATTR void fps_Start_m065762A4BDD5F9B9B7570A14566D194DF625FC13 (fps_t1EBD7C643A92A614792189871C4754CE3AB0DE3A * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (fps_Start_m065762A4BDD5F9B9B7570A14566D194DF625FC13_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// text = GetComponent<TextMesh>();
+		TextMesh_t327D0DAFEF431170D8C2882083D442AF4D4A0E4A * L_0 = Component_GetComponent_TisTextMesh_t327D0DAFEF431170D8C2882083D442AF4D4A0E4A_m23492DDBF5DBFA92E05E6DA9A216C9F83EB260A3(__this, /*hidden argument*/Component_GetComponent_TisTextMesh_t327D0DAFEF431170D8C2882083D442AF4D4A0E4A_m23492DDBF5DBFA92E05E6DA9A216C9F83EB260A3_RuntimeMethod_var);
+		__this->set_text_4(L_0);
+		// timeleft = updateInterval;
+		float L_1 = __this->get_updateInterval_5();
+		__this->set_timeleft_8(L_1);
+		// }
+		return;
+	}
+}
+// System.Void fps::Update()
+extern "C" IL2CPP_METHOD_ATTR void fps_Update_m97F672CB0BFF6ABB4448A190238C1771F76EFFF9 (fps_t1EBD7C643A92A614792189871C4754CE3AB0DE3A * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (fps_Update_m97F672CB0BFF6ABB4448A190238C1771F76EFFF9_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	float V_1 = 0.0f;
+	{
+		// timeleft -= Time.deltaTime;
+		float L_0 = __this->get_timeleft_8();
+		float L_1 = Time_get_deltaTime_m16F98FC9BA931581236008C288E3B25CBCB7C81E(/*hidden argument*/NULL);
+		__this->set_timeleft_8(((float)il2cpp_codegen_subtract((float)L_0, (float)L_1)));
+		// accum += Time.timeScale / Time.deltaTime;
+		float L_2 = __this->get_accum_6();
+		float L_3 = Time_get_timeScale_m7E198A5814859A08FD0FFE6DD5F7ED5C907719F8(/*hidden argument*/NULL);
+		float L_4 = Time_get_deltaTime_m16F98FC9BA931581236008C288E3B25CBCB7C81E(/*hidden argument*/NULL);
+		__this->set_accum_6(((float)il2cpp_codegen_add((float)L_2, (float)((float)((float)L_3/(float)L_4)))));
+		// ++frames;
+		int32_t L_5 = __this->get_frames_7();
+		__this->set_frames_7(((int32_t)il2cpp_codegen_add((int32_t)L_5, (int32_t)1)));
+		// if (timeleft <= 0.0) {
+		float L_6 = __this->get_timeleft_8();
+		V_0 = (bool)((((int32_t)((!(((double)(((double)((double)L_6)))) <= ((double)(0.0))))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		bool L_7 = V_0;
+		if (!L_7)
+		{
+			goto IL_00a3;
+		}
+	}
+	{
+		// float fps = accum / frames;
+		float L_8 = __this->get_accum_6();
+		int32_t L_9 = __this->get_frames_7();
+		V_1 = ((float)((float)L_8/(float)(((float)((float)L_9)))));
+		// text.text = fps.ToString("0") + " FPS";
+		TextMesh_t327D0DAFEF431170D8C2882083D442AF4D4A0E4A * L_10 = __this->get_text_4();
+		String_t* L_11 = Single_ToString_m211B5E14B0C60667C56838D5C3788CFA58670DDE((float*)(&V_1), _stringLiteralB6589FC6AB0DC82CF12099D1C2D40AB994E8410C, /*hidden argument*/NULL);
+		String_t* L_12 = String_Concat_mB78D0094592718DA6D5DB6C712A9C225631666BE(L_11, _stringLiteral96B6D46DCDE338BFDECDD98FE3B16EF61D352CFC, /*hidden argument*/NULL);
+		NullCheck(L_10);
+		TextMesh_set_text_m64242AB987CF285F432E7AED38F24FF855E9B220(L_10, L_12, /*hidden argument*/NULL);
+		// timeleft = updateInterval;
+		float L_13 = __this->get_updateInterval_5();
+		__this->set_timeleft_8(L_13);
+		// accum = 0.0F;
+		__this->set_accum_6((0.0f));
+		// frames = 0;
+		__this->set_frames_7(0);
+	}
+
+IL_00a3:
+	{
+		// }
+		return;
+	}
+}
+// System.Void fps::.ctor()
+extern "C" IL2CPP_METHOD_ATTR void fps__ctor_mC7825FE814373B3C483A423D607DB7539D443481 (fps_t1EBD7C643A92A614792189871C4754CE3AB0DE3A * __this, const RuntimeMethod* method)
+{
+	{
+		// readonly float updateInterval = 0.5F;
+		__this->set_updateInterval_5((0.5f));
+		// float accum = 0; // FPS accumulated over the intervalint
+		__this->set_accum_6((0.0f));
+		// int frames = 0; //Frames drawn over the interval
+		__this->set_frames_7(0);
+		MonoBehaviour__ctor_mEAEC84B222C60319D593E456D769B3311DFCEF97(__this, /*hidden argument*/NULL);
+		return;
 	}
 }
 #ifdef __clang__
