@@ -13,6 +13,7 @@ public class MessageHandler : MonoBehaviour {
     }
 
     void GotMesssage(string message) {
+        Debug.Log(message);
         if (message.Contains("youtube")) {
             hudController.currSelectedDisplay.LoadVideo(message);
             return;
@@ -22,7 +23,7 @@ public class MessageHandler : MonoBehaviour {
 
         switch (words[0]) {
         case ("display"):
-            Debug.Log(message);
+            hudController.SelectDisplayNum(int.Parse(words[1]));
             break;
         case ("website"):
             hudController.currSelectedDisplay.LoadWebsite(words[1]);

@@ -4,7 +4,7 @@ using UnityEngine.Networking;
 
 public class WebsiteAPI : MonoBehaviour {
 
-    const string ENDPOINT = "www.matthewhallberg.com:12001/getImage";
+    const string ENDPOINT = "http://www.matthewhallberg.com:12001/getImage";
 
     public MeshRenderer meshRenderer;
 

@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class RotationalTracking : MonoBehaviour {
 
     Transform arCamera;
-
+#if !UNITY_EDITOR
     // Use this for initialization
     void Start() {
         arCamera = Camera.main.transform;
@@ -19,4 +19,5 @@ public class RotationalTracking : MonoBehaviour {
         Quaternion cameraRotation = new Quaternion(Input.gyro.attitude.x, Input.gyro.attitude.y, -Input.gyro.attitude.z, -Input.gyro.attitude.w);
         arCamera.transform.localRotation = cameraRotation;
     }
+#endif
 }

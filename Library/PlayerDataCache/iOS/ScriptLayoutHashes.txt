@@ -192,6 +192,7 @@ fbbf64dcbe0662e3eda1dec45ea8f895 Vuforia.UnityExtensions.dll:Vuforia.WireframeBe
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.EarthBehavior
 f628ef4c54e89b739fd5f9ffe84215ff Assembly-CSharp.dll:.DisplayBehavior
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.InterfaceController
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.RotationalTracking
 b3ab2106268377ffe25dd18ac23dca28 Unity.TextMeshPro.dll:TMPro.TMP_Asset
 4b07f4a500dcb7b796c37cfa2bd7c3fa Assembly-CSharp.dll:.MessageHandler
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.Analytics.Editor.dll:UnityEditor.Analytics.AnalyticsEventTrackerEditor
@@ -315,4 +316,3 @@ cd67f3e1e9ccac6db86c1564cea5a827 Vuforia.UnityExtensions.dll:Vuforia.VuforiaConf
 69167579cf7fcbb2676fc1e675963dcd Vuforia.UnityExtensions.dll:Vuforia.VuMarkBehaviour
 fbbf64dcbe0662e3eda1dec45ea8f895 Vuforia.UnityExtensions.dll:Vuforia.WireframeBehaviour
 71bb6a6b6c8f052f948db64c7dd3ca4f Vuforia.UnityExtensions.dll:Vuforia.WireframeTrackableEventHandler
-71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.RotationalTracking

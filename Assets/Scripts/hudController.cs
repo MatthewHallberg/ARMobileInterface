@@ -31,7 +31,6 @@ public class HudController : MonoBehaviour {
         } else {
             switch (message) {
             case "web":
-                Debug.Log("Web");
                 if (currDisplay != null) {
                     currDisplay.ToggleState();
                     earth.Close();
@@ -57,11 +56,17 @@ public class HudController : MonoBehaviour {
         }
     }
 
+    public void SelectDisplayNum(int num) {
+        if (displays.Count < num) return;
+        currSelectedDisplay = displays[num - 1];
+    }
+
     void UnparentScreen() {
         currDisplay.UnParent();
         currSelectedDisplay = currDisplay;
         displays.Add(currSelectedDisplay);
         currDisplay = null;
+        Debug.Log(currSelectedDisplay.name);
     }
 
     void CreateNewScreen() {

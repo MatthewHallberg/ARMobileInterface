@@ -45,8 +45,8 @@ public class MenuElement : MonoBehaviour {
         transform.SetParent(null);
         //make positions world space and larger
         startPosition = transform.TransformPoint(startPosition);
-        startPosition.y += 2;
-        startSize = Vector3.one * 2;
+        startPosition.y += 1.2f;
+        startSize = Vector3.one * 1.2f;
         //set positions
         desiredPosition = startPosition;
         desiredScale = startSize;
