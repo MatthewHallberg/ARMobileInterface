@@ -115,8 +115,6 @@
 /Users/matthewhallberg/interface/Temp/bin/Debug/Unity.CollabProxy.Editor.dll
 /Users/matthewhallberg/interface/Temp/bin/Debug/Unity.Locator.dll
 /Users/matthewhallberg/interface/Temp/bin/Debug/Unity.PackageManagerUI.Editor.dll
-/Users/matthewhallberg/interface/Temp/bin/Debug/Unity.TextMeshPro.dll
-/Users/matthewhallberg/interface/Temp/bin/Debug/Unity.TextMeshPro.Editor.dll
 /Users/matthewhallberg/interface/Temp/bin/Debug/UnityEditor.dll
 /Users/matthewhallberg/interface/Temp/bin/Debug/UnityEngine.AccessibilityModule.dll
 /Users/matthewhallberg/interface/Temp/bin/Debug/UnityEngine.AIModule.dll
@@ -200,10 +198,8 @@
 /Users/matthewhallberg/interface/Temp/bin/Debug/UnityEngine.xml
 /Users/matthewhallberg/interface/Temp/bin/Debug/UnityEditor.dll.mdb
 /Users/matthewhallberg/interface/Temp/bin/Debug/UnityEditor.xml
-/Users/matthewhallberg/interface/Temp/bin/Debug/Unity.TextMeshPro.Editor.pdb
 /Users/matthewhallberg/interface/Temp/bin/Debug/Unity.PackageManagerUI.Editor.pdb
 /Users/matthewhallberg/interface/Temp/bin/Debug/Unity.CollabProxy.Editor.pdb
-/Users/matthewhallberg/interface/Temp/bin/Debug/Unity.TextMeshPro.pdb
 /Users/matthewhallberg/interface/Temp/bin/Debug/Unity.Analytics.DataPrivacy.pdb
 /Users/matthewhallberg/interface/Temp/bin/Debug/UnityEngine.AIModule.dll.mdb
 /Users/matthewhallberg/interface/Temp/bin/Debug/UnityEngine.AIModule.xml
@@ -351,12 +347,9 @@
 /Users/matthewhallberg/interface/obj/Debug/Assembly-CSharp.pdb
 /Users/matthewhallberg/interface/Temp/bin/Debug/Vuforia.UnityExtensions.Editor.dll
 /Users/matthewhallberg/interface/Temp/bin/Debug/Boo.Lang.dll
-/Users/matthewhallberg/interface/Temp/bin/Debug/UnityEditor.UI.dll
 /Users/matthewhallberg/interface/Temp/bin/Debug/VuforiaScripts.pdb
 /Users/matthewhallberg/interface/Temp/bin/Debug/VuforiaEditorScripts.pdb
 /Users/matthewhallberg/interface/Temp/bin/Debug/Vuforia.UnityExtensions.Editor.xml
-/Users/matthewhallberg/interface/Temp/bin/Debug/UnityEditor.UI.dll.mdb
-/Users/matthewhallberg/interface/Temp/bin/Debug/UnityEditor.UI.xml
 /Users/matthewhallberg/interface/Temp/bin/Debug/Microsoft.CSharp.dll
 /Users/matthewhallberg/interface/Temp/bin/Debug/System.ComponentModel.Annotations.dll
 /Users/matthewhallberg/interface/Temp/bin/Debug/System.Net.Http.Rtc.dll
@@ -377,3 +370,10 @@
 /Users/matthewhallberg/interface/Temp/bin/Debug/Boo.Lang.Parser.dll
 /Users/matthewhallberg/interface/Temp/bin/Debug/Boo.Lang.Useful.dll
 /Users/matthewhallberg/interface/Temp/bin/Debug/TensorFlowSharp.dll
+/Users/matthewhallberg/interface/Temp/bin/Debug/Unity.TextMeshPro.dll
+/Users/matthewhallberg/interface/Temp/bin/Debug/Unity.TextMeshPro.Editor.dll
+/Users/matthewhallberg/interface/Temp/bin/Debug/UnityEditor.UI.dll
+/Users/matthewhallberg/interface/Temp/bin/Debug/Unity.TextMeshPro.Editor.pdb
+/Users/matthewhallberg/interface/Temp/bin/Debug/Unity.TextMeshPro.pdb
+/Users/matthewhallberg/interface/Temp/bin/Debug/UnityEditor.UI.dll.mdb
+/Users/matthewhallberg/interface/Temp/bin/Debug/UnityEditor.UI.xml

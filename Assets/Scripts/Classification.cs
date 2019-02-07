@@ -15,7 +15,6 @@ public class Classification : MonoBehaviour {
 	public CameraFeedBehavior camFeed;
     public TextAsset labelMap;
     public TextAsset model;
-	public AudioSource audioSource;
 	public MessageBehavior messageBehavior;
 
 	private TFGraph graph;
@@ -48,11 +47,8 @@ public class Classification : MonoBehaviour {
 		int maxIndex = probs.ToList ().IndexOf (maxValue);
 		//print label with highest probability
 		string label = labels [maxIndex];
-        //play audio
-		audioSource.clip = Resources.Load ("imageNetSounds/" + label) as AudioClip;
-		audioSource.Play ();
         Debug.Log(label);
-	    //messageBehavior.ShowMessage (label);
+	    messageBehavior.ShowMessage (label);
 	}
 
 	//stole from https://github.com/Syn-McJ/TFClassify-Unity
