@@ -4,6 +4,7 @@ using UnityEngine.Networking;
 using UnityEngine.Video;
 using System.Linq;
 using System;
+using UnityEngine.Events;
 
 [System.Serializable]
 public class VideoInfo {
@@ -32,11 +33,11 @@ public class YouTubeAPI : MonoBehaviour {
         videoPlayer = GetComponent<VideoPlayer>();
     }
 
-    public void LoadVideo(string url) {
-        StartCoroutine(GetYouTubeLinkRoutine(url));
+    public void LoadVideo(string url, UnityAction callback) {
+        StartCoroutine(GetYouTubeLinkRoutine(url, callback));
     }
 
-    IEnumerator GetYouTubeLinkRoutine(string url) {
+    IEnumerator GetYouTubeLinkRoutine(string url, UnityAction callback) {
         UnityWebRequest www = UnityWebRequest.Get(API_ENDPOINT + url);
         yield return www.SendWebRequest();
         //read json response into object
@@ -49,9 +50,14 @@ public class YouTubeAPI : MonoBehaviour {
             videoPlayer.url = videoInfo.url;
             videoPlayer.Prepare();
             Debug.Log("Video Loaded");
-            videoPlayer.Play();
         } catch (NullReferenceException e) {
             Debug.Log(e);
+            StopAllCoroutines();
         }
+        while (!videoPlayer.isPrepared) {
+            yield return new WaitForEndOfFrame();
+        }
+        callback();
+        videoPlayer.Play();
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.Networking;
+using UnityEngine.Events;
 
 public class WebsiteAPI : MonoBehaviour {
 
@@ -8,11 +9,11 @@ public class WebsiteAPI : MonoBehaviour {
 
     public MeshRenderer meshRenderer;
 
-    public void LoadImage(string url){
-        StartCoroutine(GetImageFromURL(url));
+    public void LoadImage(string url, UnityAction callback){
+        StartCoroutine(GetImageFromURL(url,callback));
     }
 
-    IEnumerator GetImageFromURL(string url) {
+    IEnumerator GetImageFromURL(string url, UnityAction callback) {
         UnityWebRequest www = UnityWebRequest.Get(ENDPOINT);
         www.SetRequestHeader("head", url);
         yield return www.SendWebRequest();
@@ -23,6 +24,7 @@ public class WebsiteAPI : MonoBehaviour {
             Texture2D tempTex = new Texture2D(2, 2);
             tempTex.LoadImage(imageBytes);
             meshRenderer.material.mainTexture = tempTex;
+            callback();
         }
     }
 }

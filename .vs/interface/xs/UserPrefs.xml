@@ -1,5 +1,9 @@
 ﻿<Properties StartupConfiguration="{B32FE478-68C1-0622-E83B-08F04D1845B5}|">
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/HudController.cs">
+    <Files>
+      <File FileName="Assets/Scripts/HudController.cs" Line="62" Column="46" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />

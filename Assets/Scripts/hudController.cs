@@ -59,6 +59,7 @@ public class HudController : MonoBehaviour {
     public void SelectDisplayNum(int num) {
         if (displays.Count < num) return;
         currSelectedDisplay = displays[num - 1];
+        ActivateDisplay(currSelectedDisplay);
     }
 
     void UnparentScreen() {
@@ -67,6 +68,17 @@ public class HudController : MonoBehaviour {
         displays.Add(currSelectedDisplay);
         currDisplay = null;
         Debug.Log(currSelectedDisplay.name);
+        ActivateDisplay(currSelectedDisplay);
+    }
+
+    void ActivateDisplay(DisplayBehavior desiredDisplay) {
+        foreach (DisplayBehavior display in FindObjectsOfType<DisplayBehavior>()) {
+            if (display == desiredDisplay) {
+                display.SetSelected(true);
+            } else {
+                display.SetSelected(false);
+            }
+        }
     }
 
     void CreateNewScreen() {

@@ -235,7 +235,6 @@
 /Users/matthewhallberg/interface/Temp/bin/Debug/Assembly-CSharp.pdb
 /Users/matthewhallberg/interface/Temp/bin/Debug/VuforiaScripts.pdb
 /Users/matthewhallberg/interface/Temp/bin/Debug/VuforiaEditorScripts.pdb
-/Users/matthewhallberg/interface/Temp/bin/Debug/VuforiaVersionCheckerScripts.pdb
 /Users/matthewhallberg/interface/Temp/bin/Debug/UnityEngine.dll.mdb
 /Users/matthewhallberg/interface/Temp/bin/Debug/UnityEngine.xml
 /Users/matthewhallberg/interface/Temp/bin/Debug/UnityEditor.dll.mdb
@@ -413,3 +412,4 @@
 /Users/matthewhallberg/interface/obj/Debug/Assembly-CSharp-Editor.csproj.CopyComplete
 /Users/matthewhallberg/interface/obj/Debug/Assembly-CSharp-Editor.dll
 /Users/matthewhallberg/interface/obj/Debug/Assembly-CSharp-Editor.pdb
+/Users/matthewhallberg/interface/Temp/bin/Debug/TensorFlowSharp.dll
