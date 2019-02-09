@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: hud 1
-  m_Shader: {fileID: 4800000, guid: c158ceb104c238944a4daf52327953f9, type: 3}
+  m_Shader: {fileID: 4800000, guid: f8ae815e0dcd2fb4384b2918ef1784b4, type: 3}
   m_ShaderKeywords: ETC1_EXTERNAL_ALPHA _ALPHATEST_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -39,6 +39,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _MKGlowTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: ddedc131a03524b23ab791cba5994dc7, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -57,12 +61,14 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _BumpScale: 1
-    - _Cutoff: 0.795
+    - _Cutoff: 0.8
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
+    - _MKGlowPower: 3.43
+    - _MKGlowTexStrength: 7.77
     - _Metallic: 0
     - _Mode: 1
     - _OcclusionStrength: 1
@@ -73,5 +79,7 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 0, g: 0.8484955, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _MKGlowColor: {r: 0, g: 1, b: 0.89932394, a: 1}
+    - _MKGlowTexColor: {r: 0, g: 1, b: 0.90737987, a: 1}

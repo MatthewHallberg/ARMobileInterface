@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
@@ -7,20 +6,22 @@ public class MessageBehavior : MonoBehaviour {
 
 	public TextMeshPro uiText;
 
-    private Vector3 showScale = new Vector3(.06f, .03f, 1);
-	private Vector3 desiredScale;
+    private Vector3 showPosition = new Vector3(0f, .01f, .1f);
+    private Vector3 hidePosition = new Vector3(0f, .05f, .1f);
+
+    private Vector3 desiredPosition;
 
 	private void Awake () {
-        desiredScale = Vector3.zero;
-	}
+        desiredPosition = hidePosition;
+    }
 
 	private void Update () {
-		transform.localScale = Vector3.Lerp (transform.localScale, desiredScale, 6F * Time.deltaTime);
+		transform.localPosition = Vector3.Lerp (transform.localPosition, desiredPosition, 10f * Time.deltaTime);
 	}
 
 	public void ShowMessage (string message) {
 		HideMessage ();
-        desiredScale = showScale;
+        desiredPosition = showPosition;
 		uiText.text = message;
 		if (DelayCoroutine != null) {
 			StopCoroutine (DelayCoroutine);
@@ -30,13 +31,14 @@ public class MessageBehavior : MonoBehaviour {
 
 	Coroutine DelayCoroutine;
 	IEnumerator DelayHideMessage () {
-		yield return new WaitForSeconds (2f);
+		yield return new WaitForSeconds (3f);
 		HideMessage ();
-		DelayCoroutine = null;
-	}
+        yield return new WaitForSeconds(3f);
+        uiText.text = "";
+        DelayCoroutine = null;
+    }
 
-	void HideMessage () {
-		desiredScale = Vector3.zero;
-		uiText.text = "";
+    void HideMessage () {
+        desiredPosition = hidePosition;
 	}
 }

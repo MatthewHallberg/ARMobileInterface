@@ -15,7 +15,7 @@ public class Classification : MonoBehaviour {
 	public CameraFeedBehavior camFeed;
     public TextAsset labelMap;
     public TextAsset model;
-	public MessageBehavior messageBehavior;
+	public QueryBehavior messageBehavior;
 
 	private TFGraph graph;
 	private TFSession session;
@@ -48,7 +48,7 @@ public class Classification : MonoBehaviour {
 		//print label with highest probability
 		string label = labels [maxIndex];
         Debug.Log(label);
-	    messageBehavior.ShowMessage (label);
+	    messageBehavior.DisplayMessage (label);
 	}
 
 	//stole from https://github.com/Syn-McJ/TFClassify-Unity

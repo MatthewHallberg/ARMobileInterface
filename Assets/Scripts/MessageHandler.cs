@@ -3,6 +3,7 @@
 public class MessageHandler : MonoBehaviour {
 
     public HudController hudController;
+    public QueryBehavior queryBehavior;
 
     private void OnEnable() {
         NetworkListener.resultRecieved += GotMesssage;
@@ -15,6 +16,8 @@ public class MessageHandler : MonoBehaviour {
     void GotMesssage(string message) {
         Debug.Log(message);
         if (message.Contains("youtube")) {
+            queryBehavior.DisplayQuery("Loading video...");
+            if (hudController.currSelectedDisplay == null) return;
             hudController.currSelectedDisplay.LoadVideo(message);
             return;
         }
@@ -23,10 +26,15 @@ public class MessageHandler : MonoBehaviour {
 
         switch (words[0]) {
         case ("display"):
-            hudController.SelectDisplayNum(int.Parse(words[1]));
+            int displayNum = int.Parse(words[1]);
+            hudController.SelectDisplayNum(displayNum);
+            queryBehavior.DisplayQuery("Selecting display: " + displayNum);
             break;
         case ("website"):
-            hudController.currSelectedDisplay.LoadWebsite(words[1]);
+            string siteName = words[1];
+            queryBehavior.DisplayQuery("Loading: " + siteName);
+            if (hudController.currSelectedDisplay == null) return;
+            hudController.currSelectedDisplay.LoadWebsite(siteName);
             break;
         case ("what"):
             GetComponent<Classification>().ProcessImage();

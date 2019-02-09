@@ -294,7 +294,7 @@ GameObject:
   - component: {fileID: 6962153706954391128}
   - component: {fileID: 4711742700920674087}
   - component: {fileID: 6714750684765847144}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Glow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -310,7 +310,7 @@ Transform:
   m_GameObject: {fileID: 6984508893807914857}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -0.001, z: 0.03}
-  m_LocalScale: {x: 1.03, y: 1.05, z: 1}
+  m_LocalScale: {x: 1.04, y: 1.07, z: 1}
   m_Children: []
   m_Father: {fileID: 8208522228468785623}
   m_RootOrder: 0
