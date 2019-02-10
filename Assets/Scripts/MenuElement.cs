@@ -2,61 +2,28 @@
 
 public class MenuElement : MonoBehaviour {
 
-    [HideInInspector]
-    public Vector3 startPosition = new Vector3(-.351f,.025f,-.198f);
-
-    Vector3 startSize = new Vector3(.2f, .2f, .2f);
-    Vector3 desiredScale = Vector3.zero;
+    readonly float moveSpeed = 7f;
+    Vector3 normalSize = new Vector3(1.5f, 1f, 1f);
     Vector3 desiredPosition;
-    float moveSpeed = 7f;
 
     // Start is called before the first frame update
     void Awake() {
-        Init();
+        PlaceDisplay();
     }
 
-    public void Init() {
-        desiredPosition = startPosition;
-        desiredPosition.y = 0;
-        desiredScale = Vector3.zero;
-        transform.localPosition = desiredPosition;
-        transform.localScale = desiredScale;
+    void PlaceDisplay() {
+        Transform mainCamera = Camera.main.transform;
+        desiredPosition = mainCamera.forward * 2;
+        transform.position = desiredPosition + new Vector3(0, 2, 0);
+        transform.LookAt(mainCamera);
+        Vector3 tempAngle = transform.eulerAngles;
+        tempAngle.x = 0;
+        tempAngle.y += 180;
+        transform.eulerAngles = tempAngle;
     }
 
     // Update is called once per frame
     void Update() {
-        transform.localScale = Vector3.Lerp(transform.localScale, desiredScale, Time.deltaTime * moveSpeed);
-        transform.localPosition = Vector3.Lerp(transform.localPosition, desiredPosition, Time.deltaTime * moveSpeed);
-    }
-
-    public void Close() {
-        desiredScale = Vector3.zero;
-        desiredPosition.y = 0;
-        moveSpeed = 11f;
-    }
-
-    public void Open() {
-        desiredScale = startSize;
-        desiredPosition = startPosition;
-        moveSpeed = 7f;
-    }
-
-    public void UnParent() {
-        transform.SetParent(null);
-        //make positions world space and larger
-        startPosition = transform.TransformPoint(startPosition);
-        startPosition.y += 1.2f;
-        startSize = Vector3.one * 1.2f;
-        //set positions
-        desiredPosition = startPosition;
-        desiredScale = startSize;
-    }
-
-    public void ToggleState() {
-        if (desiredScale == startSize) {
-            Close();
-        } else {
-            Open();
-        }
+        transform.position = Vector3.Lerp(transform.position, desiredPosition, Time.deltaTime * moveSpeed);
     }
 }

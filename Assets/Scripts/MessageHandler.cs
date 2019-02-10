@@ -26,9 +26,20 @@ public class MessageHandler : MonoBehaviour {
 
         switch (words[0]) {
         case ("display"):
-            int displayNum = int.Parse(words[1]);
-            hudController.SelectDisplayNum(displayNum);
-            queryBehavior.DisplayQuery("Selecting display: " + displayNum);
+            string action = words[1];
+            if (action == "create") {
+                hudController.CreateNewScreen();
+                queryBehavior.DisplayQuery("Creating display");
+            } else {
+                int displayNum = int.Parse(words[2]);
+                if (action == "select") {
+                    hudController.SelectDisplayNum(displayNum);
+                    queryBehavior.DisplayQuery("Selecting display: " + displayNum);
+                } else if (action == "destroy") {
+                    hudController.DestroyDisplayNum(displayNum);
+                    queryBehavior.DisplayQuery("Destroying display: " + displayNum);
+                }
+            }
             break;
         case ("website"):
             string siteName = words[1];
